@@ -28,7 +28,7 @@ ID="$(echo $xyz| awk '{print $2}')"
 TOKEN="$(echo $xyz| awk '{print $1}')"
 urlBOT="https://api.telegram.org/bot$TOKEN/sendMessage"
 [[ ! -d /bin/ejecutar/Ubam ]] && mkdir /bin/ejecutar/Ubam
-[[ -z ${_check2} ]] && mss_='\n BotGEN NO AUTORIZADO POR @ChumoGH ' || mss_=' NO SE VERIFICO SU IP DE REGISTRO '
+[[ -z ${_check2} ]] && mss_='\n BotGEN NO AUTORIZADO POR EL DEALER ' || mss_=' NO SE VERIFICO SU IP DE REGISTRO '
 cat <<EOF >/bin/menu
 clear && clear
 echo -e "\n\n\033[1;31m==================================================\n ¡¡ 🚫 KEY BANEADA  🚫 ! CONTACTE Su ADMINISTRADOR! \n==================================================\n ¡¡ FECHA DE BANEO :$(date +%d/%m/%Y) HORA :$(date +%H:%M:%S) \n==================================================\n\n¡¡ ${mss_} \n\n==================================================\n"
@@ -94,14 +94,14 @@ msg -bar3
 echo -e "\033[1;34m ${TOP}\033[1;31m TOTAL:\033[1;32m ${mem_total}\033[1;34m ${TOP} \033[1;31m Libre:\033[1;32m ${mem_free} \033[1;34m ${TOP} \033[1;31m Usada:\033[1;32m ${mem_used}"
 echo -e "\033[1;34m ${TOP}\033[1;31m Uso RAM:\033[1;32m${mem_used_percent} \033[1;34m${TOP}\033[1;31m Uso CPU:\033[1;32m${cpu_used} \033[1;34m ${TOP}\033[1;31m Cache:\033[1;32m ${mem_cache}" # $CPU"%"
 msg -bar3
-echo -e "\033[0;35m [${cor[2]}01\033[0;35m]\033[0;33m ${flech}${cor[3]} CONTROL USUARIOS (SSH/SSL/VMESS) "
+echo -e "\033[0;35m [${cor[2]}01\033[0;35m]\033[0;33m ${flech}${cor[3]} CONTROL DE USUARIOS (SSH/SSL/VMESS) "
 echo -e "\033[0;35m [${cor[2]}02\033[0;35m]\033[0;33m ${flech}${cor[3]}  HERRAMIENTAS (\033[0;34mBad/VPN$_badvpn${cor[3]}) (\033[0;34mTCP-SPEED$_tcpspeed${cor[3]})"
 echo -e "\033[0;35m [${cor[2]}03\033[0;35m]\033[0;33m ${flech}${cor[3]}\033[0;33m [!]${cor[3]} OPTIMIZAR VPS ${_opti}"
 echo -e "\033[0;35m [${cor[2]}04\033[0;35m]\033[0;33m ${flech}${cor[3]}\033[0;33m [!]\033[0;31m DESINSTALAR SCRIPT"
-echo -e "\033[0;35m [${cor[2]}06\033[0;35m]\033[0;33m ${flech}${cor[3]}  CONTADOR ONLINE USERS $VERIFICAR_PID"
+echo -e "\033[0;35m [${cor[2]}06\033[0;35m]\033[0;33m ${flech}${cor[3]}  CONTADOR ONLINE $VERIFICAR_PID"
 echo -e "\033[0;35m [${cor[2]}07\033[0;35m]\033[0;33m ${flech}${cor[3]} \e[3;32mHERRAMIENTAS BETA\e[0m \033[0;33m (#EXPERIMENTAL)"
 echo -e "\033[0;35m [${cor[2]}08\033[0;35m]\033[0;33m ${flech}${cor[3]} AUTOINICIAR SCRIPT $_autorun"
-echo -e "\033[0;35m [${cor[2]}09\033[0;35m]\033[0;33m ${flech}${cor[3]} INSTALADOR DE PROTOCOLOS "
+echo -e "\033[0;35m [${cor[2]}09\033[0;35m]\033[0;33m ${flech}${cor[3]} INSTALAR PROTOCOLOS "
 msg -bar3 
 echo -ne "\033[0;35m [${cor[2]}10\033[0;35m]\033[0;33m ${flech}\033[0;33m [!] ${cor[2]}UPDATE / \033[0;31mREMOVE${cor[3]}  |" && echo -e " \033[0;35m [${cor[2]}0\033[0;35m]\033[0;33m ⇦ $(msg -bra "\e[3;33m[ SALIR ]\e[0m")"
 msg -bar3  
