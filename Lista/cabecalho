@@ -578,7 +578,7 @@ echo -e "$puertos"|column -s "|"  -t
 } || echo -e "     ⚠️ PUERTOS SSH TRUNCADO POR DROPBEAR ⚠️   \n		Coloca : sudo -i \n	    Ve al menu 7, opcion 7 " 
 local PIDGEN=$(echo -e "${_ps}"| grep "BotGen.sh" | grep -v grep |awk '{print $1}')
 [[ ! -z $PIDGEN ]] && {
-local botG="\033[1;34m ${pPIniT} \033[1;37m BotGen Telegram 🤖 : \033[1;31m ⚡ ACTIVO ⚡"
+local botG="\033[1;34m ${pPIniT} \033[1;37m BotGen Telegram 🐰 : \033[1;31m ⚡ ACTIVO ⚡"
 msg -bar3
 echo -e "$botG"
 unset svcs porta puertos i x
