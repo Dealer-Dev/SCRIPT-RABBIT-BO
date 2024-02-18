@@ -1,6 +1,6 @@
 #!/bin/bash
 # $(pwd) - directorio
-[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/msg-bar/msg)
+[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/msg-bar/msg)
 clear&&clear
 #[[ -e /bin/menu_inst ]] || {
 #cp /ADMcgh/menu_inst /bin/protoADM
@@ -205,7 +205,7 @@ echo -e "BANNER INEXISTENTE - RECOMENDADO MODIFICAR TU BANNER"
 fun_bar 
 credit=$(cat </etc/adm-lite/menu_credito | head -1)
 [[ -e /root/name ]] && credi="$(cat < /root/name)" || credi="${credit}"
-echo -e '<p style="text-align: center;"> <big><big><big><big><big><big>🐉</big></big></big></big></big></big></p>' > /etc/bannerssh
+echo -e '<p style="text-align: center;"> <big><big><big><big>🐰</big></big></big></big></p>' > /etc/bannerssh
 echo -e '<p style="text-align: center;"><strong><span style="color: #FF00FF;">'" $credit "'&reg;</span> |&nbsp;</strong><span style="color: #483D8B;"><strong>'"$credi"'</strong></span></p>' >> /etc/bannerssh
 [[ -d /etc/dropbear ]] && {
 [[ -e /etc/bannerssh ]] && cat /etc/bannerssh > /etc/dropbear/banner
