@@ -243,10 +243,10 @@ _sys="$(lsb_release -si)-$(lsb_release -sr)"
 msg -bar3 
 echo -e "   \033[41m- CPU: \033[100m${cpu_model}\033[41m SISTEMA : \033[100m${_sys}\033[41m -\033[0m"
 msg -bar3 
-echo -e "  ${FlT}${rUlq} ADMcgh Plus $(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/version/v-new.log) | @drowkid01 OFICIAL 2023 ${rUlq}${FlT}  -" | lolcat
+echo -e "  ${FlT}${rUlq} SCRIPT RABBIT BO $(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/version/v-new.log) | 2024 ${rUlq}${FlT}  " | lolcat
 msg -bar3
-figlet ' . ADMcgh . ' | boxes -d stone -p a0v0 | lolcat
-echo "           PEGA TU KEY DE INSTALACION " | lolcat
+figlet ' .Rabbit. ' | boxes -d stone -p a0v0 | lolcat
+echo "           PEGA TU KEY " | lolcat
 echo -ne " " && msg -bar3
 echo -ne " \033[1;41m Key : \033[0;33m" && read Key
 tput cuu1 && tput dl1
@@ -260,7 +260,7 @@ new_id=$(uuidgen)
 [[ $(curl -s --connect-timeout 5 $IiP:8888) ]] && {
 tput cuu1 && tput dl1
 msg -bar3
-echo -ne " \e[90m\e[43m CHEK KEY : \033[0;33m"
+echo -ne " \e[90m\e[43m Verificando key : \033[0;33m"
 echo -e " \e[3;32m ENLAZADA AL GENERADOR\e[0m" | pv -qL 50
 tput cuu1 && tput dl1
 msg -bar3
