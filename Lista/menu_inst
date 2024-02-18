@@ -12,7 +12,7 @@ _SFTP="$(lsof -V -i tcp -P -n | grep -v "ESTABLISHED" |grep -v "COMMAND" | grep 
 portFTP=$(echo -e "$_SFTP" |cut -d: -f2 | cut -d' ' -f1 | uniq)
 portFTP=$(echo ${portFTP} | sed 's/\s\+/,/g' | cut -d , -f1)
 
-function chekKEY {
+function cHekKEY {
 Key="$(cat /etc/cghkey)"
 [[ -z $Key ]] && exit&&exit
 }
