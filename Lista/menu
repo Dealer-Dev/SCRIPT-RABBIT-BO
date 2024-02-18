@@ -23,7 +23,7 @@ cheklist="$(cat /etc/folteto)"
 chekKEY="$(echo -e "$cheklist" | grep ${Key})"
 chekIP="$(echo -e "$chekKEY" | grep ${IP} | awk '{print $3}')"
 [[ -z ${_check2} || -z ${chekIP} ]] && {
-xyz=$(curl -sSL "https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/token.sh")
+xyz=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/token.sh")
 ID="$(echo $xyz| awk '{print $2}')"
 TOKEN="$(echo $xyz| awk '{print $1}')"
 urlBOT="https://api.telegram.org/bot$TOKEN/sendMessage"
@@ -41,7 +41,7 @@ EOF
 
 rm -f /etc/folteto
 mv etc/adm-lite/* /bin/ejecutar/Ubam
- 			MENSAJE="${TTini}${m3ssg}MSG RECIVIDO${m3ssg}${TTfin}\n"
+ 			MENSAJE="${TTini}${m3ssg}MSG RECIBIDO${m3ssg}${TTfin}\n"
 			MENSAJE+=" ---------------------------------------------\n"
 			MENSAJE+=" IP : ${IP} LLEGO VACIA, O NO SE DETECTO !!!\n"
 			MENSAJE+=" ---------------------------------------------\n"
