@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/msg-bar/msg)
+[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO2/main/msg-bar/msg)
 
 cd $HOME
 selection_fun () {
