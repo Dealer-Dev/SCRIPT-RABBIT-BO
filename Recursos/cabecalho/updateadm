@@ -79,7 +79,7 @@ echo "  KEY NO PERMITIDA, ADQUIERE UN RESELLER OFICIAL" >> error.log
 echo "  ----------------------------------------------" >> error.log
 echo "  KEY NO PERMITIDA, ADQUIERE UN RESELLER OFICIAL" >> error.log
 echo "  ----------------------------------------------" >> error.log
-echo -e ' https://t.me/ChumoGH  - @ChumoGH' >> error.log
+echo -e ' Contacte a @DealerServices235' >> error.log
 echo -e "$(msg -bar)" >> error.log
 cat error.log | lolcat
 echo 'clear&&clear
@@ -198,7 +198,7 @@ sleep 0.2s
 }
 namsobin ()
 {
-echo -e "\033[1;37m      ã€     â˜… ACTUALIZADOR ChumoGH ADM â˜…     ã€‘\033[0m"
+echo -e "\033[1;37m      ã€     â˜… ACTUALIZADOR DEALER GEN-BOT â˜…     ã€‘\033[0m"
 msg -bar
 echo -e "$barra"
 echo -e "\033[92m        -- INSTALANDO PAQUETES AÃ‘ADIDOS -- "
@@ -256,7 +256,7 @@ echo -e "\033[1;36m\033[1;33m        ã€ REG KEY NUEVA PARA UPDATE  ã€‘
 else
 clear
 msg -bar
-echo -e "\033[1;37m LA CONTRASEÃ‘A o KEY NO COINCIDE "
+echo -e "\033[1;37m LA CONTRASEÑA o KEY NO COINCIDE "
 echo -e "\033[1;37m   ACTUALIZACION NO AUTORIZADA !"
 echo -e "\033[1;37m Contacte con Vendedor de la KEY"
 msg -bar
@@ -299,10 +299,10 @@ txt[204]="â™³ âž¢"
 txt[205]="âœ“"
 [[ -e /bin/ejecutar/menu_credito ]] && echo "" || echo "$(cat /etc/adm-lite/menu_credito|head -1))" > /bin/ejecutar/menu_credito && chmod +x /bin/ejecutar/menu_credito
 catress=$(cat < /bin/ejecutar/menu_credito)
-[[ -z $catress ]] && echo "Verifiedã€ New @ChumoGH 2021" > /bin/ejecutar/menu_credito
+[[ -z $catress ]] && echo "@Dealer_Gen_Bot 2024" > /bin/ejecutar/menu_credito
 namsobin
 echo "Verifiedã€ $(cat /bin/ejecutar/menu_credito)" > /bin/ejecutar/exito
-[[ -z $(cat /etc/adm-lite/menu_credito|head -1) ]] && echo "Verifiedã€ New @ChumoGH 2021" > /root/exito
+[[ -z $(cat /etc/adm-lite/menu_credito|head -1) ]] && echo "@Dealer_Gen_Bot 2024" > /root/exito
 sleep 0.5s
 msg -bar
 echo -e "      \033[1;45m $(cat < /bin/ejecutar/exito)Â© ã€‘ $(cat /bin/ejecutar/v-new.log)\033[0m"
