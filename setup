@@ -243,7 +243,7 @@ _sys="$(lsb_release -si)-$(lsb_release -sr)"
 msg -bar3 
 echo -e "   \033[41m- CPU: \033[100m${cpu_model}\033[41m SISTEMA : \033[100m${_sys}\033[41m -\033[0m"
 msg -bar3 
-echo -e "  ${FlT}${rUlq} New RABBIT BO Script $(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/version/v-new.log) | 2024 ${rUlq}${FlT}  " | lolcat
+echo -e "  ${FlT}${rUlq} New RABBIT BO Script $(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/version/v-new.log) | 2024 ${rUlq}${FlT}  " | lolcat
 msg -bar3
 figlet ' .Rabbit. ' | boxes -d stone -p a0v0 | lolcat
 echo "           PEGA TU KEY " | lolcat
