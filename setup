@@ -155,7 +155,7 @@ echo "  KEY NO PERMITIDA, ADQUIERE UN RESELLER OFICIAL" >> error.log
 echo "  ----------------------------------------------" >> error.log
 echo "  KEY NO PERMITIDA, ADQUIERE UN RESELLER OFICIAL" >> error.log
 echo "  ----------------------------------------------" >> error.log
-echo -e ' https://t.me/drowkid01 @drowkid01' >> error.log
+echo -e ' Contacte a @DealerServices235' >> error.log
 msg -bar3 >> error.log
 cat error.log | lolcat
 exit&&exit&&exit&&exit
@@ -214,12 +214,12 @@ rm -f /bin/cgh > /dev/null
 rm -rf /bin/ejecutar > /dev/null
 figlet " Key Invalida" | boxes -d stone -p a2v1 > error.log
 msg -bar3 >> error.log
-echo "  Key Invalida, Contacta con tu Provehedor" >> error.log
-echo -e ' https://t.me/ChumoGH  - @ChumoGH' >> error.log
+echo "  Key Invalida, Contacta con tu Proveedor" >> error.log
+echo -e ' Contacte a @DealerServices235' >> error.log
 msg -bar3 >> error.log
 cat error.log | lolcat
 #msg -bar3
-echo -e "    \033[1;44m  Deseas Reintentar con OTRA KEY\033[0;33m  :v"
+echo -e "    \033[1;44m¿Deseas Reintentar con OTRA KEY?\033[0;33m"
 echo -ne "\033[0;32m "
 read -p "  Responde [ s | n ] : " -e -i "n" x
 [[ $x = @(s|S|y|Y) ]] && funkey || {
@@ -243,7 +243,7 @@ _sys="$(lsb_release -si)-$(lsb_release -sr)"
 msg -bar3 
 echo -e "   \033[41m- CPU: \033[100m${cpu_model}\033[41m SISTEMA : \033[100m${_sys}\033[41m -\033[0m"
 msg -bar3 
-echo -e "  ${FlT}${rUlq} SCRIPT RABBIT BO $(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/version/v-new.log) | 2024 ${rUlq}${FlT}  " | lolcat
+echo -e "  ${FlT}${rUlq} New RABBIT BO Script $(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/version/v-new.log) | 2024 ${rUlq}${FlT}  " | lolcat
 msg -bar3
 figlet ' .Rabbit. ' | boxes -d stone -p a0v0 | lolcat
 echo "           PEGA TU KEY " | lolcat
@@ -264,7 +264,7 @@ echo -ne " \e[90m\e[43m Verificando key : \033[0;33m"
 echo -e " \e[3;32m ENLAZADA AL GENERADOR\e[0m" | pv -qL 50
 tput cuu1 && tput dl1
 msg -bar3
-echo -ne " \033[1;41m ESTAUS : \033[0;33m"
+echo -ne " \033[1;41m ESTATUS : \033[0;33m"
 tput cuu1 && tput dl1
 echo -ne "\033[1;34m [ \e[3;32m VALIDANDO CONEXION \e[0m \033[1;34m]\033[0m"
 if wget --no-check-certificate -O $HOME/lista-arq $(ofus "$Key")/$IP/$_sys/${new_id}  &>/dev/null ; then
@@ -427,7 +427,7 @@ update_pak () {
 echo "" 
 [[ $(dpkg --get-selections|grep -w "pv"|head -1) ]] || apt install pv -y &> /dev/null 
 os_system 
-echo -e "		[ ! ]  ESPERE UN MOMENTO  [ ! ]"
+echo -e "	[ ! ]  AGUARDE UNOS SEGUNDOS  [ ! ]"
 [[ $(dpkg --get-selections|grep -w "lolcat"|head -1) ]] || apt-get install lolcat -y &>/dev/null 
 [[ $(dpkg --get-selections|grep -w "figlet"|head -1) ]] || apt-get install figlet -y &>/dev/null
 [[ $(dpkg --get-selections|grep -w "figlet"|head -1) ]] || apt-get install  -y &>/dev/null
@@ -440,14 +440,14 @@ echo -e " ---- SISTEMA NO COMPATIBLE CON EL ADM ---"
 echo -e " "
 echo -e "  UTILIZA LAS VARIANTES MENCIONADAS DENTRO DEL MENU "
 echo ""
-echo -e "		[ ! ]  Power by @ChumoGH  [ ! ]"
+echo -e "		[ ! ]  Power by @DealerServices235 [ ! ]"
 echo ""
 msg -bar3
 exit && exit
 }
 echo -e "\e[1;31m  SISTEMA:  \e[33m$distro $vercion \e[1;31m	CPU:  \e[33m$(lscpu | grep "Vendor ID" | awk '{print $3}')" 
 msg -bar3
-dpkg --configure -a > /dev/null 2>&1 && echo -e "\033[94m    ${TTcent} INTENTANDO RECONFIGURAR UPDATER ${TTcent}" | pv -qL 80
+dpkg --configure -a > /dev/null 2>&1 && echo -e "\033[94m    ${TTcent} INICIALIZANDO SCRIPT ${TTcent}" | pv -qL 80
 msg -bar3
 echo -e "\033[94m    ${TTcent} UPDATE DATE : $(date +"%d/%m/%Y") & TIME : $(date +"%H:%M") ${TTcent}" | pv -qL 80
 [[ $(dpkg --get-selections|grep -w "net-tools"|head -1) ]] || apt-get install net-tools -y &>/dev/null
@@ -455,9 +455,9 @@ echo -e "\033[94m    ${TTcent} UPDATE DATE : $(date +"%d/%m/%Y") & TIME : $(date
 msg -bar3
 apt-get install software-properties-common -y > /dev/null 2>&1 && echo -e "\033[94m    ${TTcent} INSTALANDO NUEVO PAQUETES ( S|P|C )    ${TTcent}" | pv -qL 80
 msg -bar3
-echo -e "\033[94m    ${TTcent} PREPARANDO BASE RAPIDA INSTALL    ${TTcent}" | pv -qL 80 
+echo -e "\033[94m    ${TTcent} PREPARANDO RECURSOS    ${TTcent}" | pv -qL 80 
 msg -bar3
-echo -e "\033[94m    ${TTcent} CHECK IP FIJA $(wget -qO- ifconfig.me)    ${TTcent}" | pv -qL 80 
+echo -e "\033[94m    ${TTcent} VERIFICANDO IP $(wget -qO- ifconfig.me)    ${TTcent}" | pv -qL 80 
 msg -bar3
 echo " "
 sleep 2s
