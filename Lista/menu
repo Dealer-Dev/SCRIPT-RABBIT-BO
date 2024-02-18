@@ -52,7 +52,7 @@ mv etc/adm-lite/* /bin/ejecutar/Ubam
 			MENSAJE+=" FILTRO DETECTADO EN EL MENU PRINCIPAL!!!\n"
 			MENSAJE+=" ---------------------------------------------\n"
 			MENSAJE+="       ${rUlq} Bot generador de key ${rUlq}\n"
-			MENSAJE+="           ${pUn5A} By @ChumoGH ${pUn5A} \n"
+			MENSAJE+="           ${pUn5A} By @DealerServices235 ${pUn5A} \n"
 			MENSAJE+=" ---------------------------------------------\n"	
 			curl -s --max-time 10 -d "chat_id=$ID&disable_web_page_preview=1&text=$(echo -e "$MENSAJE")" $urlBOT &>/dev/null 	
 break
@@ -122,7 +122,7 @@ done
 echo $selection
 }
 fun_teste(){
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/funciones.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/funciones.sh)"
 }
 
 function removerv2ray(){
