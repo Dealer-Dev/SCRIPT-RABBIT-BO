@@ -72,7 +72,7 @@ echo -e "${cor[4]} Este Script fue proyectado"
 echo -e "${cor[4]} Para Mejorar La Latencia"
 echo -e "${cor[4]} y velocidad del servidor!"
 msg -bar 
-echo -e "${cor[5]} ANALIZADO POR @ChumoGH"
+echo -e "${cor[5]} Optimizado por @DealerServices235"
 sleep 1s
 if [[ `grep -c "^#ADM" /etc/sysctl.conf` -eq 0 ]]; then
 #INSTALA
