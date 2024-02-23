@@ -28,7 +28,7 @@ echo "$txtofus" | rev
  
 
 
-function chekKEY {
+# function chekKEY {
 [[ -z ${IP} ]] && IP=$(cat < /bin/ejecutar/IPcgh)
 Key="$(cat /etc/cghkey)"
 _Key='/etc/cghkey'
