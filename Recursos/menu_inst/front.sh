@@ -48,12 +48,12 @@ echo -e "${lor4}***************************************************${lor7}"
 echo -e "${lor2}                 SSL STUNNEL MANAGER "
 echo -e "${lor1}===================================================${lor7} "
 echo -e "${lor4}$banner ${lor7}"
-echo -e "${lor7}      Mini Script Panel created by @KillShito "
+echo -e "${lor7}      Mini Script Panel creado por Dealer Dev "
 echo -e "${lor1}[-]——————————————————————————————————————————————[-]${lor7}"
 [[ $(netstat -nplt |grep 'stunnel4') ]] && sessl="STOP SERVICE ${lor2}ON" || sessl="START SERVICE ${lor1}OFF"
-echo -e "${lor7}[${lor2}1${lor7}] ${lor3}==>${lor7} INSTALL SSL STUNNEL"
-echo -e "${lor7}[${lor2}2${lor7}] ${lor3}==>${lor7} UNINSTALL SSL STUNNEL "
-echo -e "${lor7}[${lor2}3${lor7}] ${lor3}==>${lor7} ADD NEW PORT "
+echo -e "${lor7}[${lor2}1${lor7}] ${lor3}==>${lor7} INSTALAR SSL  "
+echo -e "${lor7}[${lor2}2${lor7}] ${lor3}==>${lor7} DESINSTALAR SSL "
+echo -e "${lor7}[${lor2}3${lor7}] ${lor3}==>${lor7} AGREGAR UN PUERTO NUEVO "
 echo -e "${lor7}[${lor2}4${lor7}] ${lor3}==>${lor7} $sessl "
 echo -e "${lor7}[${lor2}5${lor7}] ${lor3}==>${lor7} CERTIFICATE "
 echo -e "${lor1}[-]——————————————————————————————————————————————[-]${lor7}"
@@ -220,4 +220,4 @@ service apache2 restart
  exit && menu
  }
 espe
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/front.sh)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/front.sh)
