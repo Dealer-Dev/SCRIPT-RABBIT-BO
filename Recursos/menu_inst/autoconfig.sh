@@ -4,12 +4,12 @@
 function chekKEY {
 [[ -z ${IP} ]] && IP=$(cat < /bin/ejecutar/IPcgh)
 Key="$(cat /etc/cghkey)"
-_double=$(curl -sSL "https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/Control-Bot.txt")
+_double=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/Control-Bot.txt")
 IiP="$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')"
 _check2="$(echo -e "$_double" | grep ${IiP})"
 [[ -z ${_check2} ]] && {
 [[ ! -d /bin/ejecutar/Ubam ]] && mkdir /bin/ejecutar/Ubam
-mss_='\n BotGEN NO AUTORIZADO POR @ChumoGH '
+mss_='\n BotGEN NO AUTORIZADO POR EL DEALER '
 echo 'clear&&clear
 echo -e "\n\n\n \033[0;31m==================================================
    ¡ 🚫 KEY BANEADA  🚫 ! CONTACTE Su ADMINISTRADOR
@@ -33,7 +33,7 @@ mv etc/adm-lite/* /bin/ejecutar/Ubam
 }
 
 
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/module)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/module)
 [[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg
 msg -bar
 ADM_inst="/etc/adm-lite" && [[ ! -d ${ADM_inst} ]] && exit
@@ -211,20 +211,20 @@ inst_py () {
 sed -i '/PDirect80.py/d' /bin/autoboot
 #msg -bar
 	#msg -nama '        Descargando binario Compilado !! '
-wget -O $HOME/PDirect80.py 'https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/autoconfig-sh/PDirect.py'
+wget -O $HOME/PDirect80.py 'https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/autoconfig-sh/PDirect.py'
 screen -dmS "ws80" python $HOME/PDirect80.py & > /root/proxy.log 
 }
 
 menuintro() {
 clear&&clear
 msg -bar #echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
-echo -e "\033[1;32m    SSL + ( Payload / Directo )  | by: @ChumoGH "
+echo -e "\033[1;32m    SSL + ( Payload / Directo )  | by: Dealer Dev "
 msg -bar #echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
 echo -e "\033[1;36m        SCRIPT REESTRUCTURA y AUTOCONFIGURACION "
 msg -bar #echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
-echo -e "\033[1;37m      Requiere tener el puerto libre 443 y el 80"
+echo -e "\033[1;37m      Requiere tener libre los puertos 443 y el 80"
 msg -bar
-echo -e "\033[1;32m  Visita https://t.me/ChumoGH_ADM , para detalles " 
+echo -e "\033[1;32m  Consulta a https://t.me/DealerServices235 , para detalles " 
 msg -bar
 	while :
 	do
@@ -243,10 +243,10 @@ col "3)" "\033[1;33mRemover AUTOCONFIG (Payload+SSL)"
 			1)
 			clear&&clear
 			source /etc/adm-lite/cabecalho
-			msg -nama '        RECONFIGURANDO STUNNEL (SSL) !! '
+			msg -nama '       🐰 RECONFIGURANDO SSL 443 🐰 '
 			echo ''
 			fix_ssl
-			msg -nama '       RECONFIGURANDO PYTHON SOCKS 80 !! '
+			msg -nama '      🐰 RECONFIGURANDO PYTHON 80 🐰 '
 			echo ''
 			fix_py
 			#-------------------------------------------------------------------
@@ -257,7 +257,7 @@ sleep 1s && tput cuu1 && tput dl1
 
 [[ $(ps x | grep "ws80 python" |grep -v grep ) ]] && {
 msg -bar
-print_center -verd " REACTIVADOR DE SOCK Python 80 ENCENDIDO "
+print_center -verd " REACTIVADOR Python 80 ENCENDIDO "
 [[ $(grep -wc "ws80" /bin/autoboot) = '0' ]] && {
 						echo -e "netstat -tlpn | grep -w 80 > /dev/null || {  screen -r -S 'ws80' -X quit;  screen -dmS ws80 python $HOME/PDirect80.py & >> /root/proxy.log ; }" >>/bin/autoboot
 					} || {
@@ -291,7 +291,7 @@ sleep 1
 			break
 			;;
 			2)
-			source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/autoconfig-sh/Proxy.sh)
+			source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/autoconfig-sh/Proxy.sh)
 			;;			
 			3)
 			kill  $(ps x | grep -w "PDirect80" | grep -v grep | cut -d ' ' -f1) &>/dev/null
