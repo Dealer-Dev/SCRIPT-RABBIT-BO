@@ -1,6 +1,6 @@
 #!/bin/bash  
 clear  
-[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg > /dev/null || source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/msg-bar/msg) > /dev/null
+[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg > /dev/null || source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/msg-bar/msg) > /dev/null
 
 selection_fun () {
 local selection="null"
@@ -24,7 +24,7 @@ os_system(){
  }
 
 download_udpServer(){
-	msg -nama '        Descargando binario UDPserver ----'
+	msg -nama '       🐰 Descargando binario UDP 🐰 ----'
 	if wget -O /usr/bin/udpServer 'https://bitbucket.org/iopmx/udprequestserver/downloads/udpServer' &>/dev/null ; then
 		chmod +x /usr/bin/udpServer
 		msg -verd 'OK'
@@ -41,13 +41,13 @@ function chekKEY {
 Key="$(cat /etc/cghkey)"
 _Key='/etc/cghkey'
 [[ -e /file ]] && _double=$(cat < /file) ||  {
-wget -q -O /file https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/Control-Bot.txt
-_double=$(curl -sSL "https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/Control-Bot.txt")
+wget -q -O /file https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/Control-Bot.txt
+_double=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/Control-Bot.txt")
 }
 IiP="$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')"
 _check2="$(echo -e "$_double" | grep ${IiP} | awk '{print $1}')"
 [[ -z ${_check2} ]] && {
-mss_='\n BotGEN NO AUTORIZADO POR @ChumoGH '
+mss_='\n BotGEN NO AUTORIZADO POR EL DEALER '
 rm -f /etc/folteto
 rm -rf /etc/adm-lite/*
 }
@@ -60,7 +60,7 @@ cheklist="$(cat /etc/folteto)"
 chekKEY="$(echo -e "$cheklist" | grep ${Key} | awk '{print $5}')"
 chekIP="$(echo -e "$cheklist" | grep ${IP} | awk '{print $3}')"
 [[ -z ${chekKEY} || -z ${chekIP} ]] && {
-xyz=$(curl -sSL "https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/token.sh")
+xyz=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/token.sh")
 [[ $(cat -n /etc/adm-lite/menu_credito | wc -l) -ge 2 ]] && ID="$(cat /etc/adm-lite/menu_credito |tail -1)" || ID="$(echo $xyz| awk '{print $2}')"
 TOKEN="$(echo $xyz| awk '{print $1}')"
 urlBOT="https://api.telegram.org/bot$TOKEN/sendMessage"
@@ -95,7 +95,7 @@ exit && exit
 }
 
 _mssBOT () {
-xyz=$(curl -sSL "https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/token.sh")
+xyz=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/token.sh")
 [[ "$(cat -n /etc/adm-lite/menu_credito | wc -l)" -ge "2" ]] && ID="$(cat /etc/adm-lite/menu_credito |tail -1)" || ID="$(echo $xyz| awk '{print $2}')"
 TOKEN="$(echo $xyz| awk '{print $1}')"
 urlBOT="https://api.telegram.org/bot$TOKEN/sendMessage"
@@ -137,7 +137,7 @@ make_service(){
   reset_slow(){
   clear
   msg -bar
-  msg -ama "        Reiniciando UDPserver...."
+  msg -ama "        Reiniciando UDP...."
   screen -ls | grep UDPserver | cut -d. -f1 | awk '{print $1}' | xargs kill
   if screen -dmS UDPserver /usr/bin/udpServer -ip=$ip_publica -net=$interfas -mode=system ;then
   msg -verd "        Con exito!!!"    
@@ -153,7 +153,7 @@ make_service(){
   stop_slow(){
   clear
   msg -bar
-  msg -ama "        Deteniendo UDPserver...."
+  msg -ama "        Deteniendo UDP...."
   if screen -ls | grep UDPserver | cut -d. -f1 | awk '{print $1}' | xargs kill ; then
   msg -verd "         Con exito!!!"   msg -bar
   else
@@ -171,7 +171,7 @@ make_service(){
   info() {
   msg -bar
   echo
-  msg -ama "         INSTALADOR UDPserver | @ChumoGH•Plus"
+  msg -ama "         INSTALADOR UDPserver | MOD DEALER Dev"
   echo 
   msg -bar
   msg -ama "         SOURCE OFICIAL DE NewToolWorks"
@@ -180,7 +180,7 @@ make_service(){
   msg -ama "         URL DE APP OFICIAL "
   echo -e "https://play.google.com/store/apps/details?id=com.newtoolsworks.sockstunnel"
   msg -bar
-  msg -ama "         CODIGO REFACTORIZADO POR @ChumoGH"
+  msg -ama "         CODIGO REFACTORIZADO POR @DealerServices235"
   msg -bar
   read -p " PRESIONA ENTER PARA CONTINUAR"
   clear
@@ -203,20 +203,20 @@ msg -ama "        SE RECOMIENDA USAR UBUNTU 20.04 "
 echo ""
 msg -ama "                  O SUPERIOR"
 echo ""
-echo -e "         [ ! ]  Power by @ChumoGH  [ ! ]"
+echo -e "         [ ! ]  Power by Dealer Dev [ ! ]"
 echo ""
 msg -bar
 read -p " PRESIONA ENTER PARA CONTINUAR"
 return
 }
   msg -bar
-  msg -ama "         INSTALADOR UDPserver | @ChumoGH•Plus"
+  msg -ama "         INSTALADOR UDPserver | DEALER Dev MOD"
   msg -bar
 [[ $(uname -m 2> /dev/null) != x86_64 ]] && {
 
 msg -ama "    BINARIO NO COMPATIBLE CON PLATAFORMAS ARM "
 echo ""
-echo -e "		[ ! ]  Power by @ChumoGH  [ ! ]"
+echo -e "		[ ! ]  Power by DEALER Dev  [ ! ]"
 echo ""
 msg -bar
 read -p " PRESIONA ENTER PARA CONTINUAR"
