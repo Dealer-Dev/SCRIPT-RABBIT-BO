@@ -38,7 +38,7 @@ echo 'export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
 [[ -z $(locale | grep "LANG=" | cut -d "=" -f2) ]] && export LANG=en_US.UTF-8 
 DATE=$(date +"%d-%m-%y")
 TIME=$(date +"%T") 
-figlet -f slant "ChuKK-MOD" | lolcat 
+figlet -f slant "RABBIT" | lolcat 
 echo -e "" 
 killall menu &> /dev/null
 /bin/autoboot &> /dev/null
@@ -68,7 +68,7 @@ echo 'export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/
 [[ -z $(locale | grep "LANG=" | cut -d "=" -f2) ]] && export LANG=en_US.UTF-8 
 DATE=$(date +"%d-%m-%y")
 TIME=$(date +"%T") 
-figlet -f slant "ChuKK-MOD" | lolcat 
+figlet -f slant "RABBIT" | lolcat 
 echo -e "" 
 killall menu &> /dev/null
 /bin/autoboot &> /dev/null
@@ -83,7 +83,7 @@ echo -e ""
 echo -e "\tRESELLER: \e[1;31m$(cat /etc/adm-lite/menu_credito|head -1)"
 echo -e "\033[1;39m" 
 echo -e " Bienvenido!"
-echo -e "\033[1;43m Teclee cgh , menu o adm para ver el MENU\033[0m." 
+echo -e "\033[1;43m Teclee menu , rabbit o adm para ver el MENU\033[0m." 
 echo -e "" 
 ' > /etc/ADMcgh/bashrc
 #echo -e 'source /etc/ADMcgh/bashrc' >> /etc/bash.bashrc
@@ -337,7 +337,7 @@ echo -e ""
 echo -e "${cor[2]}\n\033[1;37m  SCRIPT DESARROLLADO por: @DealerServices235" | pv -qL 12
 echo -e ""
 msg -bar3
-echo -e "  ${cor[5]} SCRIPT RABBIT-BO 2024" 
+echo -e "  ${cor[5]}🐇🐰 SCRIPT RABBIT-BO 2024 🐰🐇" 
 msg -bar3
 echo -e "${cor[3]}     VERIFICANDO RAIZ DE DATOS DE LA LLAVE !!! "
 msg -bar3
@@ -386,7 +386,7 @@ rm -f /var/log/auth.log*
 echo '' > /var/log/auth.log
 cp /bin/adm /bin/menu
 }
-cd ${SCPdir} && ./menu' > /bin/chukk && chmod +x /bin/chukk
+cd ${SCPdir} && ./menu' > /bin/rabbit && chmod +x /bin/rabbit
 #
 echo '#!/bin/bash
 # Creado por @ChumoGH
