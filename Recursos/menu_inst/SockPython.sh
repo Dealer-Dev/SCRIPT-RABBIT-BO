@@ -14,10 +14,10 @@ function chekKEY {
 [[ -z ${IP} ]] && IP=$(cat < /bin/ejecutar/IPcgh)
 [[ -z ${IP} ]] && IP=$(wget -qO- ifconfig.me)
 Key="$(cat /etc/cghkey)"
-_double=$(curl -sSL "https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/Control-Bot.txt")
+_double=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/Control-Bot.txt")
 IiP="$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')"
 [[ -e /file ]] && _double=$(cat < /file) ||  {
-wget -q -O /file https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/Control-Bot.txt
+wget -q -O /file https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/Control-Bot.txt
 _double=$(cat < /file)
 }
 _check2="$(echo -e "$_double" | grep ${IiP})"
@@ -27,7 +27,7 @@ cheklist="$(cat /etc/folteto)"
 echo -e "$(echo -e "$cheklist" | grep ${IP})" > /etc/folteto
 }
 [[ -z ${_check2} ]] && {
-mss_='\n BotGEN NO AUTORIZADO POR @ChumoGH '
+mss_='\n BotGEN NO AUTORIZADO POR EL DEALER '
 cat <<EOF >/bin/menu
 clear && clear
 echo -e "\n\n\033[1;31m==================================================\n �� �253 KEY BANEADA  �253 ! CONTACTE Su ADMINISTRADOR! \n==================================================\n �� FECHA DE BANEO :$(date +%d/%m/%Y) HORA :$(date +%H:%M:%S) \n==================================================\n\n�� ${mss_} \n\n==================================================\n"
@@ -51,14 +51,14 @@ rm -f /etc/adm-lite/menu*
 			MENSAJE+=" HORA : $(printf '%(%D-%H:%M:%S)T')\n"
 			MENSAJE+=" ---------------------------------------------\n"
 			MENSAJE+="       ${rUlq} Bot ADMcgh de keyS ${rUlq}\n"
-			MENSAJE+="           ${pUn5A} By @ChumoGH ${pUn5A} \n"
+			MENSAJE+="           ${pUn5A} By @DEALER ${pUn5A} \n"
 			MENSAJE+=" ---------------------------------------------\n"	
 			curl -s --max-time 10 -d "chat_id=$ID&disable_web_page_preview=1&text=$(echo -e "$MENSAJE")" $urlBOT &>/dev/null 	
 exit && exit
 }
 }
 
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/module)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/module)
 [[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg
 msg -bar3
 ADM_inst="/etc/adm-lite" && [[ ! -d ${ADM_inst} ]] && exit
@@ -279,7 +279,7 @@ msg -bar3
     else
         py="python"
     fi
-[[ -z ${texto_soket} ]] && texto_soket='<span style=color: #ff0000;><strong><span style="color: #ff0000;">C</span><span style="color: #ff9900;">h</span><span style="color: #008000;">u</span><span style="color: #0000ff;">m</span><span style="color: #ff0000;">o</span><span style="color: #ff9900;">G</span><span style="color: #008000;">H</span><span style="color: #0000ff;">�</span><span style="color: #ff0000;">P</span><span style="color: #ff9900;">l</span><span style="color: #008000;">u</span><span style="color: #0000ff;">s</span></strong></span>'
+[[ -z ${texto_soket} ]] && texto_soket='<span style=color: #ff0000;><strong><span style="color: #ff0000;">D</span><span style="color: #ff9900;">E</span><span style="color: #008000;">A</span><span style="color: #0000ff;">L</span><span style="color: #ff0000;">E</span><span style="color: #ff9900;">R</span><span style="color: #008000;">🐰</span><span style="color: #0000ff;"></span><span style="color: #ff0000;">D</span><span style="color: #ff9900;">e</span><span style="color: #008000;">v</span><span style="color: #0000ff;">🐰</span></strong></span>'
 
 mod1() {
 tput cuu1 && tput dl1
@@ -293,7 +293,7 @@ msg -ama "      BINARIO OFICIAL DE Epro Dev Team "
 sleep 2s && tput cuu1 && tput dl1
 [[ -e /etc/adm-lite/PDirect ]] && {
 echo -e "[Unit]
-Description=WS-Epro Service by @ChumoGH
+Description=WS-Epro Service by @Dealer
 After=network.target
 StartLimitIntervalSec=0
 
@@ -1039,7 +1039,7 @@ case ${selection} in
 	read -p "PRESIONE ENTER PARA RETORNAR"
 	exit
 	} || {
-	if wget -O /bin/WS-Epro https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/binarios/SockWS/autoStart &>/dev/null ; then
+	if wget -O /bin/WS-Epro https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/binarios/SockWS/autoStart &>/dev/null ; then
 	  chmod 777 /bin/WS-Epro
 	fi
     mod1 "${conect}" 
@@ -1066,11 +1066,11 @@ pidproxy3=$(ps x | grep -w  "PDirect" | grep -v "grep" | awk -F "pts" '{print $1
 pidproxy4=$(ps x | grep -w  "POpen.py" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidproxy4 ]] && P4="\033[1;32m[ON]" || P4="\033[1;31m[OFF]"
 pidproxy5=$(ps x | grep "PGet.py" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidproxy5 ]] && P5="\033[1;32m[ON]" || P5="\033[1;31m[OFF]"
 pidproxy6=$(ps x | grep "scktcheck" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidproxy6 ]] && P6="\033[1;32m[ON]" || P6="\033[1;31m[OFF]"
-echo -e "\e[91m\e[43m  ==== SCRIPT MOD ChumoGH|EDICION ====  \033[0m \033[0;33m[$(less ${ADM_inst}/v-local.log)]"
+echo -e "\e[91m\e[43m  ==== SCRIPT MOD DEALER Dev|EDICION ====  \033[0m \033[0;33m[$(less ${ADM_inst}/v-local.log)]"
 msg -bar3
 echo -ne "$(msg -verd "  [1]") $(msg -verm2 ">") " && msg -azu "Socks Python SIMPLE      $P1"
 echo -ne "$(msg -verd "  [2]") $(msg -verm2 ">") " && msg -azu "Socks Python SEGURO      $P2"
-echo -ne "$(msg -verd "  [3]") $(msg -verm2 ">") " && msg -azu "Socks Python DIRETO (WS) $P3"
+echo -ne "$(msg -verd "  [3]") $(msg -verm2 ">") " && msg -azu "Socks Python DIRECTO (WS) $P3"
 echo -ne "$(msg -verd "  [4]") $(msg -verm2 ">") " && msg -azu "Socks Python OPENVPN     $P4"
 echo -ne "$(msg -verd "  [5]") $(msg -verm2 ">") " && msg -azu "Socks Python GETTUNEL    $P5"
 echo -ne "$(msg -verd "  [6]") $(msg -verm2 ">") " && msg -azu "Socks Python TCP BYPASS  $P6"
