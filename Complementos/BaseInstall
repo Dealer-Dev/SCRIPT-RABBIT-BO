@@ -336,7 +336,7 @@ echo -e ""
 echo -e "${cor[2]}\n\033[1;37m  SCRIPT DESARROLLADO por: @DealerServices235" | pv -qL 12
 echo -e ""
 msg -bar3
-echo -e "  ${cor[5]}           🐇🐰 SCRIPT RABBIT-BO 2024 🐰🐇" 
+echo -e "  ${cor[5]}        🐇🐰 SCRIPT RABBIT-BO 2024 🐰🐇" 
 msg -bar3
 echo -e "${cor[3]}     VERIFICANDO RAIZ DE DATOS DE LA LLAVE !!! "
 msg -bar3
