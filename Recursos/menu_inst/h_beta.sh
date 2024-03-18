@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/msg-bar/msg)
+[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/msg-bar/msg)
 
 	verif_ptrs() {
 		porta=$1
@@ -34,7 +34,7 @@ fun_openssh() {
 [\033[1;36m2\033[1;31m] \033[1;37m• \033[1;33mREMOVER PORTA\033[1;31m
 [\033[1;36m3\033[1;31m] \033[1;37m• \033[1;33mVOLTAR\033[0m"
 		echo ""
-		echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;37m "
+		echo -ne "\033[1;32mOQUE DESEA HACER \033[1;33m?\033[1;37m "
 		read resp
 		if [[ "$resp" = '1' ]]; then
 			clear
@@ -270,7 +270,7 @@ fun_openssh
 return 0
 ;;
 5)
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/h_beta-sh/trojan-go)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/h_beta-sh/trojan-go)
 ;;
 6)
 clear&&clear
@@ -279,7 +279,7 @@ echo -e "A CONTINUACION CREAREMOS UN CETIFICADO SSL"
 echo -e "   LA VERIFICACION ES MEDIANTE DOMINIO"
 echo -e "  NECECITAS TENER EL PUERTO 80 Y 443 LIBRES"
 echo -e "================================================"
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/certificadossl.sh)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/certificadossl.sh)
 echo -e "================================================"
 echo -e ""
 echo -e "================================================"
@@ -291,7 +291,7 @@ echo -e "================================================"
 echo -e ""
 ;;
 7)
-rm -f /tmp/wireguard-install.sh* && wget -q -O /tmp/wireguard-install.sh https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/h_beta-sh/wireguard-install.sh && chmod +x /tmp/wireguard-install.sh && /tmp/wireguard-install.sh
+rm -f /tmp/wireguard-install.sh* && wget -q -O /tmp/wireguard-install.sh https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/h_beta-sh/wireguard-install.sh && chmod +x /tmp/wireguard-install.sh && /tmp/wireguard-install.sh
 ;;
 8)
 filemanager
