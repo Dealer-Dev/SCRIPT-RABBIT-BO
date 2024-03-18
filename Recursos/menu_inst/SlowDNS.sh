@@ -25,7 +25,7 @@ function chekKEY {
 Key="$(cat /etc/cghkey)"
 IiP="$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')"
 [[ -e /file ]] && _double=$(cat < /file) ||  {
-wget -q -O /file https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Control/Control-Bot.txt
+wget -q -O /file https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Control/Control-Bot.txt
 _double=$(cat < /file)
 }
 _check2="$(echo -e "$_double" | grep ${IiP})"
@@ -36,7 +36,7 @@ echo -e "$(echo -e "$cheklist" | grep ${IP})" > /etc/folteto
 }
 [[ -z ${_check2} ]] && {
 [[ ! -d /bin/ejecutar/Ubam ]] && mkdir /bin/ejecutar/Ubam
-mss_='\n BotGEN NO AUTORIZADO POR @ChumoGH '
+mss_='\n BotGEN NO AUTORIZADO POR EL DEALER '
 
 cat <<EOF >/bin/menu
 clear && clear
@@ -105,7 +105,7 @@ info(){
   fi  
   
   msg -bar
-  msg -ama "         DATOS DE SU CONECCION SLOWDNS"
+  msg -ama "         DATOS DE SU CONEXION SLOWDNS"
   msg -bar
   msg -ama "Su NameServer: $(cat ${ADM_slow}/domain_ns)"
   msg -bar
@@ -170,7 +170,7 @@ info(){
   echo -e "\e[1;31m      TIENES UN DOMINIO NS YA REGISTRADO \e[1;37m "    
   echo -e "\e[1;32m   TU NS ES : ${NS1} \e[1;37m "    
   echo -e "  SI QUIERES UTILIZARLO, SOLO PRESIONA ENTER "
-  echo -e "       CASO CONTRARIO DIJITA TU NUEVO NS "
+  echo -e "       CASO CONTRARIO DIGITA TU NUEVO NS "
   msg -bar 
   echo -ne "\e[1;31m TU DOMINIO NS \e[1;37m: "    
   read NS
@@ -185,7 +185,7 @@ info(){
   if [[ ! -e ${ADM_inst}/dns-server ]]; then    
   msg -ama " Descargando binario...." 
   [[ $(uname -m 2> /dev/null) != x86_64 ]] && {
-  if wget -O ${ADM_inst}/dns-server https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/binarios/SlowDNS/autoStart-ARM &>/dev/null ; then
+  if wget -O ${ADM_inst}/dns-server https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/binarios/SlowDNS/autoStart-ARM &>/dev/null ; then
   chmod +x ${ADM_inst}/dns-server    
   msg -verd "[OK]"    
   else    
@@ -197,7 +197,7 @@ info(){
   exit 0    
   fi
   } || {   
-  if wget -O ${ADM_inst}/dns-server https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/binarios/SlowDNS/autoStart-x86-64 &>/dev/null ; then
+  if wget -O ${ADM_inst}/dns-server https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/binarios/SlowDNS/autoStart-x86-64 &>/dev/null ; then
   chmod +x ${ADM_inst}/dns-server    
   msg -verd "[OK]"    
   else    
@@ -304,16 +304,16 @@ while true; do
 [[ $(ps x | grep dns-server | grep -v grep) ]] && MT=$(msg -verd "ACTIVO!!!" ) || MT=$(msg -verm "INACTIVO!!!")
   msg -bar
   tittle
-  msg -ama "         INSTALADOR SLOWDNS | @ChumoGH${p1t0}Plus"
+  msg -ama "         INSTALADOR SLOWDNS | by: El Dealer ${p1t0}Plus"
   msg -bar #
   echo -e " SlowDNS +" "${PRT} ""->" "${PT}"  "| ESTADO -> ${MT}"
   msg -bar
   #${mbar2} ## #${mbar2} ## #${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ## #${mbar2} ## #${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ###${mbar2} ##
   #[[ $(uname -m 2> /dev/null) != x86_64 ]] && {
 #echo -e "\033[1;32mÎ” SlowDNS no compatible en procesadores ARM " 
-#echo -e "\033[1;32mÎ”  Motor no disponible en ARM by @ChumoGH " 
+#echo -e "\033[1;32mÎ”  Motor no disponible en ARM" 
 #msg -bar
-#echo -e "\033[1;32mÎ”  Visita https://t.me/ChumoGH_ADM , para detalles " 
+#echo -e "\033[1;32mÎ”  Consulta a https://t.me/DealerServices235 , para detalles " 
 #msg -bar
 #read -p "ENTER PARA CONTINUAR"
 #chekKEY &> /dev/null 2>&1
