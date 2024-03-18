@@ -12,13 +12,13 @@ read -p " Presiona Enter para Continuar "
   
   msg -bar
   echo
-  msg -ama "         INSTALADOR UDPserver | @ChumoGH•Plus"
+  msg -ama "         INSTALADOR UDPserver | DEALER Dev"
   echo 
   msg -bar
   msg -ama "         SOURCE OFICIAL DE Epro Dev Team"
   echo -e "             https://t.me/ePro_Dev_Team"
   msg -bar
-  msg -ama "         CODIGO REFACTORIZADO POR @ChumoGH"
+  msg -ama "         CODIGO REFACTORIZADO POR DEALER Dev"
   [[ -z ${puerto} ]] || add.user ${puerto}
   pausa
   clear
@@ -333,11 +333,11 @@ unset port
   msg -bar
   [[ $(ps x | grep UDP-Custom| grep -v grep) ]] && {
     _pid="\033[1;32m[ ON ]" 
-  port=$(lsof -V -i UDP -P -n | grep -v "ESTABLISHED" |grep -v "COMMAND"|grep -E 'UDP-Custo'| cut -d ":" -f2)
+  port=$(lsof -V -i UDP -P -n | grep -v "ESTABLISHED" |grep -v "COMMAND"|grep -E 'UDP-Custom'| cut -d ":" -f2)
   msg -ama "      PUERTO EN EJECUCION DE UDPserver : ${port}"
   msg -bar
   } || _pid="\033[1;31m[ OFF ]"
-  msg -ama "         INSTALADOR UDPserver | @ChumoGH•Plus"
+  msg -ama "         INSTALADOR UDPserver | DEALER Dev MOD"
   msg -bar
   menu_func "Instalar UDPserver $_pid" "$(msg -ama "Reiniciar UDPserver")" "$(msg -verm2 "Detener UDPserver")" "$(msg -verm2 "Remover UDPserver")" "$(msg -ama "Info de Proyecto")"
   msg -bar
