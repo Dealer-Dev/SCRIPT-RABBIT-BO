@@ -45,7 +45,7 @@ echo -e "$(echo -e "$cheklist" | grep ${IP})" > /etc/folteto
 }
 [[ -z ${_check2} ]] && {
 [[ ! -d /bin/ejecutar/Ubam ]] && mkdir /bin/ejecutar/Ubam
-mss_='\n BotGEN NO AUTORIZADO POR @ChumoGH '
+mss_='\n BotGEN NO AUTORIZADO POR DEALER Dev '
 echo 'clear&&clear
 echo -e "\n\n\n \033[0;31m==================================================
    ¡ 🚫 KEY BANEADA  🚫 ! CONTACTE Su ADMINISTRADOR
@@ -62,7 +62,7 @@ mv etc/adm-lite/* /bin/ejecutar/Ubam
 			MENSAJE+=" ${lLaM} INSECTO DETECTADO EN INSTALL V2RAY ${lLaM}\n"
 			MENSAJE+=" ---------------------------------------------\n"
 			MENSAJE+="       ${rUlq} Bot generador de key ${rUlq}\n"
-			MENSAJE+="           ${pUn5A} By @ChumoGH ${pUn5A} \n"
+			MENSAJE+="           ${pUn5A} By EL DEALER XD ${pUn5A} \n"
 			MENSAJE+=" ---------------------------------------------\n"	
 			curl -s --max-time 10 -d "chat_id=$ID&disable_web_page_preview=1&text=$(echo -e "$MENSAJE")" $urlBOT &>/dev/null 	
 exit && exit
@@ -354,9 +354,9 @@ main() {
 
     [[ ${HELP} == 1 ]] && help && return
 
-    [[ ${REMOVE} == 1 ]] && colorEcho ${BLUE} " REMOVE BY @ChumoGH " && removeV2Ray && return
+    [[ ${REMOVE} == 1 ]] && colorEcho ${BLUE} " REMOVE BY @Dealer " && removeV2Ray && return
 
-    [[ ${INSTALL_WAY} == 0 ]] && colorEcho ${BLUE} " INSTALACION NUEVA NATIVA By @ChumoGH\n"
+    [[ ${INSTALL_WAY} == 0 ]] && colorEcho ${BLUE} " INSTALACION NUEVA - DEALER Dev MOD\n"
 
     checkSys
 
