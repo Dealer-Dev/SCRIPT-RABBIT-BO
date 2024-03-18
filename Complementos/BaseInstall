@@ -53,7 +53,7 @@ echo -e ""
 echo -e "\tRESELLER: \e[1;31m$(cat /etc/adm-lite/menu_credito|head -1)"
 echo -e "\033[1;39m" 
 echo -e " Bienvenido!"
-echo -e "\033[1;43m Teclee cgh , menu o adm para ver el MENU\033[0m." 
+echo -e "\033[1;43m Teclee rabbit , menu o adm para ver el MENU\033[0m." 
 echo -e "" 
 ' > /etc/ADMcgh/bashrc
 echo "STARTUP AGREGADO EXITOSAMENTE"
@@ -137,7 +137,7 @@ echo -e "${cor[3]} Scrip RABBIT BO Instalado exitosamente"
 msg -bar3
 echo -e "${cor[3]} |∆| ${cor[2]} Ahora puedes acceder al PANNEL"
 msg -bar3
-echo -e " \033[1;41m Use los Comandos: menu, adm"
+echo -e " \033[1;41m Use los Comandos: rabbit, menu, o adm"
 msg -bar3
 echo -e "${cor[2]} Para acceder al MENU, DISFRUTA LA ESTANCIA!"
 echo -e "${cor[2]} Reinicie para completar Instalacion - OPCIONAL - "
