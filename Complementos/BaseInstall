@@ -100,8 +100,7 @@ echo "$fecha" > /bin/ejecutar/fecha
 clear
 msg -bar3
 echo -e "\033[0;33m
-       Nombre de tu servidor.... OPCIONAL
-       RECOMENDABLE 10 Caracteres Maximo!"
+       Escribe el nombre de tu servidor"
 msg -bar3
 echo -ne "\033[1;97m NOMBRE DEL SERVIDOR : \033[0m" && read name
 [[ -z "${name}" ]] || {
@@ -337,7 +336,7 @@ echo -e ""
 echo -e "${cor[2]}\n\033[1;37m  SCRIPT DESARROLLADO por: @DealerServices235" | pv -qL 12
 echo -e ""
 msg -bar3
-echo -e "  ${cor[5]}🐇🐰 SCRIPT RABBIT-BO 2024 🐰🐇" 
+echo -e "  ${cor[5]}             🐇🐰 SCRIPT RABBIT-BO 2024 🐰🐇" 
 msg -bar3
 echo -e "${cor[3]}     VERIFICANDO RAIZ DE DATOS DE LA LLAVE !!! "
 msg -bar3
