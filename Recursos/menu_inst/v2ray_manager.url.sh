@@ -1,2 +1,2 @@
 #!/bin/sh
-source <(curl -sSL  https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/v2ray_manager.sh)
+source <(curl -sSL  https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/v2ray_manager.sh)
