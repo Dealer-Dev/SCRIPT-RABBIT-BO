@@ -45,7 +45,7 @@ fi
 back_menu(){
      echo -e "$bar1"
      read -p "$(echo -e "${morado}Enter Para Continuar${cierre}")" enter
-     source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/sslh-back3.sh)
+     source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/sslh-back3.sh)
 }
 t_port () {
 t_node=$(lsof -V -i tcp -P -n | grep -v "ESTABLISHED" |grep -v "COMMAND" | grep "LISTEN")
@@ -75,7 +75,7 @@ msg(){
     echo -e "${blanco}# ❗️ ${azul}Openconnect, http, sslh; ssh,${cierre} ${blanco}si su servicio es  ${blanco}# ${cierre}"
     echo -e "${blanco}# ❗️ Diferente porfavor en nombre establezca ${guinda}anyprot  ${blanco}# ${cierre}"
     echo -e "${blanco}#   -----------------------------------------------   #${cierre}"
-    echo -e "${blanco}#     ${amarillo} SCRIPT Modo Beta, Creditos a @ChumoGH      ${blanco}#${cierre}"
+    echo -e "${blanco}#     ${amarillo} SCRIPT Modo Beta, Creditos a Dealer Dev      ${blanco}#${cierre}"
     echo -e "${blanco}#   ${melon}-----------------------------------------------   ${blanco}#${cierre}"
     echo -e "${blanco}#     dev: ${verde}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ${blanco}#${cierre}"
     echo -e "${blanco}#######################################################${cierre}"
