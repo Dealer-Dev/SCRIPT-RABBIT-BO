@@ -1,7 +1,7 @@
 #By @ChumoGH|Plus
 clear&&clear
 
-[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg > /dev/null || source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/msg-bar/msg) > /dev/null
+[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg > /dev/null || source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/msg-bar/msg) > /dev/null
 
 
 RED="\033[31m"
@@ -308,7 +308,7 @@ msg -bar3
     red "$(cat /root/hy/url.txt)"
     yellow "El URI de configuraci�n de Hysteria 2 (sin salto de puerto) "
     red "$(cat /root/hy/url-nohop.txt)"
-read -p "$(green "Hysteria 2 Modulos UDP By @ChumoGH Finalizado ") "
+read -p "$(green "Hysteria 2 Modulos UDP By DEALER Dev Finalizado ") "
 }
 
 _hysteria(){
@@ -365,7 +365,7 @@ if wget -O /bin/hysteria https://github.com/apernet/hysteria/releases/download/v
 fi
 sleep 4s && del 1
 msg -nama '     Descargando Motor JSON . . . . '
-if wget -O /etc/adm-lite/HYSTERIA/config.json https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/UDPserver-sh/config.json &>/dev/null ; then
+if wget -O /etc/adm-lite/HYSTERIA/config.json https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/UDPserver-sh/config.json &>/dev/null ; then
 		chmod +x /etc/adm-lite/HYSTERIA/config.json
 		sed -i "s/setobfs/${OBFS}/" /etc/adm-lite/HYSTERIA/config.json
 		msg -verd ' OK'
@@ -376,7 +376,7 @@ fi
 sleep 4s && del 1
 msg -nama '     COMPILANDO GoLang AUTHSSH '
 #if wget -O /bin/authSSH https://raw.githubusercontent.com/ChumoGH/ADMcgh/main/Plugins/authSSH &>/dev/null ; then
-if wget -O /bin/authSSH https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/UDPserver-sh/authSSH &>/dev/null ; then
+if wget -O /bin/authSSH https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/UDPserver-sh/authSSH &>/dev/null ; then
 		chmod +x /bin/authSSH
 		msg -verd ' OK'
 	else
@@ -385,7 +385,7 @@ if wget -O /bin/authSSH https://raw.githubusercontent.com/kelokepe/scriptcgh/mai
 fi
 sleep 4s && del 1
 msg -nama '     COMPILANDO BINARIO DE SYSTEMA . . . . '
-if wget -O /etc/adm-lite/HYSTERIA/hysteria.service https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/UDPserver-sh/hysteria.service &>/dev/null ; then
+if wget -O /etc/adm-lite/HYSTERIA/hysteria.service https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/UDPserver-sh/hysteria.service &>/dev/null ; then
 		chmod +x /etc/adm-lite/HYSTERIA/hysteria.service
 		systemctl disable hysteria.service &>/dev/null
 		#rm -f /etc/systemd/system/hysteria.service
@@ -412,7 +412,7 @@ echo " OBFS : ${OBFS}" >> /etc/adm-lite/HYSTERIA/data
 echo " PUERTO : 36712" >> /etc/adm-lite/HYSTERIA/data
 echo " ALPN : h3" >> /etc/adm-lite/HYSTERIA/data
 echo " RANGO DE PUERTOS : 10000:65000" >> /etc/adm-lite/HYSTERIA/data
-echo -e " \n 	Power By @ChumoGH" >> /etc/adm-lite/HYSTERIA/data
+echo -e " \n 	Power By DEALER Dev" >> /etc/adm-lite/HYSTERIA/data
 msg -bar3
 echo ""
 echo " --- TUS DATOS DE SERVICIO SON ---"
@@ -588,8 +588,8 @@ do
 unset port
   tittle
   #menu_func " UDP-REQUEST  SocksIP    \033[0;31m[${_So}\033[0;31m]${_MSYS}" "UDP-CUSTOM HTTPCustom \033[0;31m[${_Cu}\033[0;31m]${_MSYS}" "UDP-Hysteria APPMod's \033[0;31m[${_HIS}\033[0;31m] ${_MSYS}"
-  echo -e "\033[0;35m [${cor[2]}01\033[0;35m]\033[0;33m ${flech}${cor[3]}UDP-REQUEST  SocksIP         \033[0;31m[${_So}\033[0;31m] ${_MSYS}" 
-  echo -e "\033[0;35m [${cor[2]}02\033[0;35m]\033[0;33m ${flech}${cor[3]}UDP-CUSTOM HTTPCustom        \033[0;31m[${_Cu}\033[0;31m] ${_MSYS}" 
+  echo -e "\033[0;35m [${cor[2]}01\033[0;35m]\033[0;33m ${flech}${cor[3]}UDP  SocksIP         \033[0;31m[${_So}\033[0;31m] ${_MSYS}" 
+  echo -e "\033[0;35m [${cor[2]}02\033[0;35m]\033[0;33m ${flech}${cor[3]}UDP-CUSTOM       \033[0;31m[${_Cu}\033[0;31m] ${_MSYS}" 
   echo -e "\033[0;35m [${cor[2]}03\033[0;35m]\033[0;33m ${flech}${cor[3]}UDP-Hysteria APPMod's        \033[0;31m[${_HIS}\033[0;31m] ${_MSYS}"
   echo -e "\033[0;35m [${cor[2]}04\033[0;35m]\033[0;33m ${flech}${cor[3]}UDP-Hysteria2 HTTP-Injector  \033[0;31m[${_HIS2}\033[0;31m] ${_MSYS2}"
   msg -bar3
@@ -597,8 +597,8 @@ unset port
   msg -bar3
   opcion=$(selection_fun 4)
   case $opcion in
-  1) source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/UDPserver.org.sh) && exit;;
-  2) source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/udp-custom.sh) && exit;;
+  1) source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/UDPserver.org.sh) && exit;;
+  2) source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/udp-custom.sh) && exit;;
   3) [[ $(ps x | grep -w "/bin/hysteria"| grep -v grep) ]] && _menuH || _hysteria ;;
   4) [[ $(ps x | grep -w "/bin/Hysteria2"| grep -v grep) ]] && _menuH2 || _hysteria2 ;;
   0) exit;;
