@@ -2677,7 +2677,7 @@ msg -bar3
 echo -e " \033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m${flech}\033[0;33m  Original (Todo en Consola)   \033[0;32m(#OFICIAL)" 
 echo -e " \033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m${flech}\033[0;33m  MENU Ngix (descontinuado)    \033[0;32m(#OFICIAL)   " #\033[0;33m(#EXPERIMENTAL)"
 echo -e " \033[0;35m[\033[0;36m3\033[0;35m] \033[0;34m${flech}\033[0;33m  MENU Dealer MOD 🐰      \033[0;32m(#OFICIAL)"
-echo -e " \033[0;35m[\033[0;36m4\033[0;35m] \033[0;34m${flech}\033[0;33m  Pannel WEB ( X-RAY ) Traduccion @ChumoGH  \033[0;32m(#OFICIAL)"
+echo -e " \033[0;35m[\033[0;36m4\033[0;35m] \033[0;34m${flech}\033[0;33m  Pannel WEB ( X-RAY ) by: Dealer Dev \033[0;32m(#OFICIAL)"
 echo -e " \033[0;35m[\033[0;36m5\033[0;35m] \033[0;34m${flech}\033[0;33m  REMOVED V2RAY BASE "
 #echo -e " \033[0;35m[\033[0;36m6\033[0;35m] \033[0;34m${flech}\033[0;33m  FIX PARA INSTALLS FAILS DE V2RAY  "
 msg -bar3 
