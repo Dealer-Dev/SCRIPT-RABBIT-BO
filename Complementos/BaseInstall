@@ -21,8 +21,8 @@ mkdir /bin/ejecutar
 [[ -e /bin/ejecutar/menu_credito ]] && echo "" || echo "$(cat /etc/adm-lite/menu_credito|head -1)" > /bin/ejecutar/menu_credito && chmod +x /bin/ejecutar/menu_credito
 wget -q -O /bin/toolmaster https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Complementos/toolmaster 
 chmod +x /bin/toolmaster
-echo 'source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Complementos/free-men.sh)' > /bin/ejecutar/echo-ram.sh
-echo 'wget -q -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/kelokepe/scriptcgh/main/version/v-new.log' >> /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh
+echo 'source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Complementos/free-men.sh)' > /bin/ejecutar/echo-ram.sh
+echo 'wget -q -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/version/v-new.log' >> /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh
 echo '#!/bin/bash
 ' > /bin/autoboot
 chmod +x /bin/autoboot
@@ -397,7 +397,7 @@ service ssh restart >/dev/null 2>&1
 #[[ -e ${SCPdir}/cabecalho ]] && bash ${SCPdir}/cabecalho --instalar
 install_ini
 cor[2]="\033[1;37m"
-wget -q -O /var/www/html/index.html https://raw.githubusercontent.com/kelokepe/scriptcgh/main/html/index.html
+wget -q -O /var/www/html/index.html https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/html/index.html
 install_fim
 #[[ -e ${SCPdir}/cabecalho ]] && bash ${SCPdir}/cabecalho --instalar
 return
