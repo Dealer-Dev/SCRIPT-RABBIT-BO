@@ -2638,7 +2638,7 @@ echo -e "\033[1;32m 9). - Si deseas acceder al PANNEL teclea \033[1;35mx-ui \033
 msg -bar3
 echo -e "  MANUAL EN EL PORTAL https://seakfind.github.io/2021/10/10/X-UI/ "
 msg -bar3
-curl -o /usr/bin/x-ui -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/x-ui.sh
+curl -o /usr/bin/x-ui -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/x-ui.sh
 chmod +x /usr/bin/x-ui	
 
 msg -ama "        UNLOCK SYSTEMCTL ...."
@@ -2672,11 +2672,11 @@ fi
 
 v2ray-socket() {
 msg -bar3
-echo -e "MOTOR DE INSTALACION DE PANNEL WEB Y CONSOLA DE V2RAY Y XRAY"
+echo -e "INSTALADOR DE v2ray Y PANEL WEB (XRAY)"
 msg -bar3
 echo -e " \033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m${flech}\033[0;33m  Original (Todo en Consola)   \033[0;32m(#OFICIAL)" 
-echo -e " \033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m${flech}\033[0;33m  MENU Rufu99 Mod @ChumoGH     \033[0;32m(#OFICIAL)   " #\033[0;33m(#EXPERIMENTAL)"
-echo -e " \033[0;35m[\033[0;36m3\033[0;35m] \033[0;34m${flech}\033[0;33m  MENU Reforma @ChumoGH        \033[0;32m(#OFICIAL)"
+echo -e " \033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m${flech}\033[0;33m  MENU Ngix (descontinuado)    \033[0;32m(#OFICIAL)   " #\033[0;33m(#EXPERIMENTAL)"
+echo -e " \033[0;35m[\033[0;36m3\033[0;35m] \033[0;34m${flech}\033[0;33m  MENU Dealer MOD 🐰      \033[0;32m(#OFICIAL)"
 echo -e " \033[0;35m[\033[0;36m4\033[0;35m] \033[0;34m${flech}\033[0;33m  Pannel WEB ( X-RAY ) Traduccion @ChumoGH  \033[0;32m(#OFICIAL)"
 echo -e " \033[0;35m[\033[0;36m5\033[0;35m] \033[0;34m${flech}\033[0;33m  REMOVED V2RAY BASE "
 #echo -e " \033[0;35m[\033[0;36m6\033[0;35m] \033[0;34m${flech}\033[0;33m  FIX PARA INSTALLS FAILS DE V2RAY  "
@@ -2684,10 +2684,10 @@ msg -bar3
 selection=$(selection_fun 7)
 case ${selection} in
 1)
-[[ -e /etc/v2ray/config.json ]] && v2r.sh || source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/v2ray.sh)
+[[ -e /etc/v2ray/config.json ]] && v2r.sh || source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/v2ray.sh)
 ;;
 2)
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu_inst/v2ray_manager.url.sh)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu_inst/v2ray_manager.url.sh)
 ;;
 3)
 unset yesno
@@ -2697,7 +2697,7 @@ read -p "[S/N]: " yesno
 tput cuu1 && tput dl1
 done
 if [[ ${yesno} = @(s|S|y|Y) ]]; then
-echo 'source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/v2ray1.sh)' > /bin/v2ray.menu
+echo 'source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/v2ray1.sh)' > /bin/v2ray.menu
 chmod +x /bin/v2ray.menu 
 v2ray.menu
 else
