@@ -179,6 +179,6 @@ BadVPN
 msg -bar
 clear&&clear
 msg -bar
-toilet -f pagga "ChumoGH-UDP" | lolcat
+toilet -f pagga "DEALER-UDP" | lolcat
 msg -bar
 return
