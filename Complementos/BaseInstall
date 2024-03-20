@@ -53,7 +53,7 @@ echo -e ""
 echo -e "\tRESELLER: \e[1;31m$(cat /etc/adm-lite/menu_credito|head -1)"
 echo -e "\033[1;39m" 
 echo -e " Bienvenido!"
-echo -e "\030[1;43m Teclee rabbit , menu o adm para ver el MENU\030[0m." 
+echo -e "\e[32m Teclee rabbit , menu o adm para ver el MENU\032[0m." 
 echo -e "" 
 ' > /etc/ADMcgh/bashrc
 echo "STARTUP AGREGADO EXITOSAMENTE"
@@ -83,7 +83,7 @@ echo -e ""
 echo -e "\tRESELLER: \e[1;31m$(cat /etc/adm-lite/menu_credito|head -1)"
 echo -e "\033[1;39m" 
 echo -e " Bienvenido!"
-echo -e "\030[1;43m Teclee rabbit , menu o adm para ver el MENU\030[0m."
+echo -e "\e[32m Teclee rabbit , menu o adm para ver el MENU\032[0m."
 echo -e "" 
 ' > /etc/ADMcgh/bashrc
 #echo -e 'source /etc/ADMcgh/bashrc' >> /etc/bash.bashrc
