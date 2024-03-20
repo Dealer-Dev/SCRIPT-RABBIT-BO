@@ -44,7 +44,7 @@ killall menu &> /dev/null
 /bin/autoboot &> /dev/null
 bash /bin/ejecutar/echo-ram.sh               
 echo -e " VPS SE INSTALO EL : " $(cat < /bin/ejecutar/fecha) 
-echo -e " NOMBRE DEL SERVIDO : $HOSTNAME" 
+echo -e " NOMBRE DEL SERVIDOR : $HOSTNAME" 
 echo -e " TIEMPO EN LINEA : $(uptime -p)" 
 echo -e " MEMORIA RAM LIBRE : $(cat < /bin/ejecutar/raml)" 
 echo -e " Fecha/Hora del Servidor : $DATE" 
@@ -53,7 +53,7 @@ echo -e ""
 echo -e "\tRESELLER: \e[1;31m$(cat /etc/adm-lite/menu_credito|head -1)"
 echo -e "\033[1;39m" 
 echo -e " Bienvenido!"
-echo -e "\033[1;43m Teclee rabbit , menu o adm para ver el MENU\033[0m."
+echo -e "\033[1;43m Teclee rabbit , menu o adm para ver el MENU\033[0m. "
 echo -e "" 
 ' > /etc/ADMcgh/bashrc
 echo "STARTUP AGREGADO EXITOSAMENTE"
@@ -83,7 +83,7 @@ echo -e ""
 echo -e "\tRESELLER: \e[1;31m$(cat /etc/adm-lite/menu_credito|head -1)"
 echo -e "\033[1;39m" 
 echo -e " Bienvenido!"
-echo -e "\033[1;43m Teclee rabbit , menu o adm para ver el MENU\033[0m."
+echo -e "\033[1;43m Teclee rabbit , menu o adm para ver el MENU\033[0m. "
 echo -e "" 
 ' > /etc/ADMcgh/bashrc
 #echo -e 'source /etc/ADMcgh/bashrc' >> /etc/bash.bashrc
@@ -114,9 +114,9 @@ msg -bar3
 echo -e "AÑADE TU DOMINIO ( OPCIONAL ) "
 msg -bar3
 echo -e "\033[0;33m
-       NO posees un Subdominio enlazado a
-       esta IP, PRESIONA ENTER 
-	   CASO CONTRARIO, Colocalo AQUI!!"
+       Si no posees un Subdominio enlazado a
+             esta IP PRESIONA ENTER,
+	 CASO CONTRARIO, Colocalo AQUI!!"
 msg -bar3
 echo -ne "\033[1;97m Domain : \033[0m" && read dom
 [[ -z "${dom}" ]] && { 
