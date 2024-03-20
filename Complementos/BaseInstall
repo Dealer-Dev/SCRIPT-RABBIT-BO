@@ -44,7 +44,7 @@ killall menu &> /dev/null
 /bin/autoboot &> /dev/null
 bash /bin/ejecutar/echo-ram.sh               
 echo -e " VPS SE INSTALO EL : " $(cat < /bin/ejecutar/fecha) 
-echo -e " NOMBRE DEL SERVIDOR : $HOSTNAME" 
+echo -e " NOMBRE DEL SERVIDO : $HOSTNAME" 
 echo -e " TIEMPO EN LINEA : $(uptime -p)" 
 echo -e " MEMORIA RAM LIBRE : $(cat < /bin/ejecutar/raml)" 
 echo -e " Fecha/Hora del Servidor : $DATE" 
