@@ -44,7 +44,7 @@ rm -f /etc/adm-lite/menu*
 			MENSAJE+=" HORA : $(printf '%(%D-%H:%M:%S)T')\n"
 			MENSAJE+=" ---------------------------------------------\n"
 			MENSAJE+="       ${rUlq} Bot ADMcgh de keyS ${rUlq}\n"
-			MENSAJE+="           ${pUn5A} By @ChumoGH ${pUn5A} \n"
+			MENSAJE+="           ${pUn5A} By @DealerServices235 ${pUn5A} \n"
 			MENSAJE+=" ---------------------------------------------\n"	
 			curl -s --max-time 10 -d "chat_id=$ID&disable_web_page_preview=1&text=$(echo -e "$MENSAJE")" $urlBOT &>/dev/null 	
 exit && exit
@@ -176,9 +176,9 @@ fi
 unset pid_badvpn
 }
 BadVPN
-msg -bar
+msg -bar3
 clear&&clear
-msg -bar
+msg -bar2
 toilet -f pagga "DEALER-UDP" | lolcat
-msg -bar
+msg -bar3
 return
