@@ -153,10 +153,10 @@ systemctl restart cron >/dev/null 2>&1
 exit
 }
 sfix () {
-source <(curl -sL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/sourcesfix.sh)
+source <(curl -sL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/sourcesfix.sh)
 }
 trofix(){
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/mod-v2ray.sh)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/mod-v2ray.sh)
 }
 autoop(){
 [[ -e /root/name ]] && figlet -p -f smslant < /root/name | lolcat || echo -e "\033[7;49;35m    ${TTini} New ChumoGH${TTcent}VPS ${TTfin}      \033[0m"
@@ -183,7 +183,7 @@ return
 echo -e "\033[1;37m  ${RRini} Reseller : $(cat < /bin/ejecutar/menu_credito) 2022 ${RRfin}\033[0m"
 echo " Desabilitando Servicios de AutOptimizacion" && sed -i "/ejecutar/d" /etc/crontab
 echo -ne " VERIFICANDO SISTEMA......"
-if wget https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/tumbs.sh &>/dev/null -O /usr/bin/autotumbs &>/dev/null ; then
+if wget https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/tumbs.sh &>/dev/null -O /usr/bin/autotumbs &>/dev/null ; then
 echo -e "${cor[2]} \033[1;32m EXITO \n" && msg -bar3 
 chmod +x /usr/bin/autotumbs &>/dev/null 
 autotumbs --start
@@ -209,7 +209,7 @@ read -p "Enter para Continuar"
 2)
 echo -e "Desabilitando Servicios de AutOptimizacion"
 echo -ne " VERIFICANDO SISTEMA......"
-if wget https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/tumbs.sh &>/dev/null -O /usr/bin/autotumbs &>/dev/null ; then
+if wget https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/tumbs.sh &>/dev/null -O /usr/bin/autotumbs &>/dev/null ; then
 echo -e "${cor[2]} \033[1;32m EXITO \n" && msg -bar3 
 chmod +x /usr/bin/autotumbs &>/dev/null 
 autotumbs --stop
@@ -227,7 +227,7 @@ fi
 esac
 }
 bbr () {
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/tcp.sh)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/tcp.sh)
 }
 function tls13(){
 apt-get install -y git autoconf libtool
@@ -246,7 +246,7 @@ service stunnel4 restart
 cd /root
 }
 clash-man () {
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/clash-beta.sh)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/clash-beta.sh)
 }
 fixssh () {
 unset portserv
@@ -288,7 +288,7 @@ exit 0
 fi
 }
 xswap () {
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/swapfile.sh)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/swapfile.sh)
 }
 mpro () {
 msg -bar3  
@@ -342,18 +342,18 @@ rm -f golang.*
 source ~/.profile
 }
 ssrmenu() {
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/trojan-nao.sh)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/trojan-nao.sh)
 }
 btorrent () {
-source <(curl -sL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/blockT.sh)
+source <(curl -sL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/blockT.sh)
 }
 chora () {
-source <(curl -sL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/hora.sh)
+source <(curl -sL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/hora.sh)
 }
 
 crea_pay () {
 echo -e "A continuacion se instalara los Paquetes Necesarios"
-echo -e "Sea Paciente mientas completamos el Proceso "
+echo -e "Sea Paciente mientras completamos el Proceso "
 echo -e "Deseas Continuar?"
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
 read -p "[S/N]: " yesno
@@ -440,7 +440,7 @@ echo -e "\033[1;31mINSTALACION FINALIZADA - PRESIONE ENTER\033[0m"
 read -p " "
 }
 function removershadowsocks(){
-wget --no-check-certificate -O libev.sh https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/shadowsocks.sh > /dev/null 2>&1
+wget --no-check-certificate -O libev.sh https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/shadowsocks.sh > /dev/null 2>&1
 chmod +x libev.sh 
 ./libev.sh uninstall 
 rm -rf libev.sh 
@@ -533,7 +533,7 @@ read -p " "
 }
 
 reiniciar_ser () {
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/gnula.sh) --menu
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/gnula.sh) --menu
 return 0
 }
 host_name () {
@@ -574,7 +574,7 @@ return
 }
 
 rootpass () {
-source <(curl -sSL  https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Complementos/root-pass.sh)
+source <(curl -sSL  https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Complementos/root-pass.sh)
 }
 
 apa_nginx() {
@@ -585,10 +585,10 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/nginx.conf"
+wget -q -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/nginx.conf"
 [[ ! -d /var/www/html ]] && mkdir -p /var/www/html
 [[ ! -e /var/www/html/index.html ]] && echo "<pre>Setup by @ChumoGH</pre>" > /var/www/html/index.html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/vps.conf"
 /etc/init.d/nginx restart
 }
 
@@ -605,7 +605,7 @@ echo -ne " Desea Seguir? [S/N]: "; read x
 echo -e ""
 echo " KILL MULTILOGIN PARA SSH / DROPBEAR "
 echo -ne " VERIFICANDO SISTEMA......"
-if wget https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/killSSH.sh &>/dev/null -O /bin/killssh &>/dev/null ; then
+if wget https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/killSSH.sh &>/dev/null -O /bin/killssh &>/dev/null ; then
 #curl -LO --progress-bar url && wget -q -O ruta_file url_ruta
 echo -e "${cor[2]} \033[1;32m EXITO \n" && msg -bar3 
 chmod +x /bin/killssh &>/dev/null 
@@ -827,7 +827,7 @@ echo -e "\033[1;37m      【      Reseller : $(cat < /bin/ejecutar/menu_credi
 	9) rootpass;;
 	10) mtraff;;
 	11) RSLL;;
-	12) wget -q -O /tmp/dnsNN.sh https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Recursos/menu/dnsNN.sh && chmod +x /tmp/dnsNN.sh && bash /tmp/dnsNN.sh;;
+	12) wget -q -O /tmp/dnsNN.sh https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/menu/dnsNN.sh && chmod +x /tmp/dnsNN.sh && bash /tmp/dnsNN.sh;;
 	13) sfix;;
 	14) chora;;
 	15) goinst;;
