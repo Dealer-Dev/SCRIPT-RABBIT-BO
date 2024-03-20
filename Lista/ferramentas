@@ -2,7 +2,7 @@
 start_menu () {
 source /etc/adm-lite/cabecalho
 echo -e "${cor[2]} ⌐╦╦═─ ${cor[5]} MENÚ HERRAMIENTAS By $(cat /etc/adm-lite/menu_credito|head -1)"
-msg -bar 
+msg -bar3 
 echo -e "\033[0;35m [\033[0;36m1\033[0;35m]\033[0;31m ➮${cor[3]} Bloqueo Torrent y Palabras Claves \033[0;33m( #BETA )"
 echo -e "\033[0;35m [\033[0;36m2\033[0;35m]\033[0;31m ➮${cor[3]} FIX PassWD Vultr"
 echo -e "\033[0;35m [\033[0;36m3\033[0;35m]\033[0;31m ➮${cor[3]} Bad-VPN (Juegos Online/llamadas) $_badvpn"
@@ -15,9 +15,9 @@ echo -e "\033[0;35m [\033[0;36m9\033[0;35m]\033[0;31m ➮${cor[3]} GENERADOR DE 
 echo -e "\033[0;35m [\033[0;36m10\033[0;35m]\033[0;31m ➮${cor[3]} ULTRA HOST DE DOMINIOS "
 echo -e "\033[0;35m [\033[0;36m11\033[0;35m]\033[0;31m ➮${cor[3]} CAPTURAR SUBDOMINIOS \033[0;33m( #ToolMaster )"
 echo -e "\033[0;35m [\033[0;36m12\033[0;35m]\033[0;31m ➮${cor[3]} REINICIAR VPS (REBOOT)"
-msg -bar 
+msg -bar3 
 echo -e " \033[0;35m[\033[0;36m0\033[0;35m]\033[0;31m ➮ $(msg -bra "\033[1;41m[ Regresar ]\e[0m")"
-msg -bar
+msg -bar3
 }
 
 #FUNCION DE SELECCION
@@ -35,9 +35,9 @@ echo $selection
 
 
 block_torrent () {
-msg -bar 
+msg -bar3 
 source <(curl -sL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Recursos/blockT.sh)
-msg -bar 
+msg -bar3 
 export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/games
 read -p " Presiona Enter para Continuar"
 exit
@@ -48,9 +48,9 @@ msg -bar #
 echo -e 'Aplicando FIX para Vultr VPS Passwd'
 echo -e "Añadiendo Registro a PAM.D"
 sed -i 's/.*pam_cracklib.so.*/password sufficient pam_unix.so sha512 shadow nullok try_first_pass #use_authtok/' /etc/pam.d/common-password
-msg -bar #
+msg -bar3 #
 echo -e "Registro agregado"
-msg -bar #
+msg -bar3 #
 sleep 2s
 cgh
 }
