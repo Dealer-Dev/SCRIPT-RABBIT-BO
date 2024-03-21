@@ -1981,10 +1981,10 @@ main(){
 		[[ -e /etc/v2ray/config.json.lock ]] && _v2LOCK="$(cat /etc/v2ray/config.json.lock|wc -l)" || _v2LOCK=0
 		clear
 		title2
-		title "   Ram: \033[1;32m$_usor  \033[0;31m<<< \033[1;37mMENU V2RAY \033[0;31m>>>  \033[1;37mCPU: \033[1;32m$_usop"
+		title "   Ram: \033[1;32m$_usor  \033[0;31m< \033[1;37m V2RAY DEALER MOD \033[0;31m>  \033[1;37mCPU: \033[1;32m$_usop"
 		col "1)" "CREAR NUEVO USUARIO"
 		col "2)" "\033[0;92mRENOVAR USUARIO"
-		col "3)" "\033[0;31mREMOVER USUARIO"
+		col "3)" "\033[0;31mELIMINAR USUARIO"
 		col "4)" "VER DATOS DE USUARIOS \033[1;32m ( ${_v2Reg} )"
 		col "5)" "VER USUARIOS CONECTADOS"
 		col "b)" "LOCK/UNLOCK USUARIO \033[1;32m ( ${_v2LOCK} )"
