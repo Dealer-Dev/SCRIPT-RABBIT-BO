@@ -1,6 +1,6 @@
 #!/bin/bash
 #19/12/2019
-source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/msg-bar/msg2)
+source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/msg-bar/msg2)
 clear
 msg -bar 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
