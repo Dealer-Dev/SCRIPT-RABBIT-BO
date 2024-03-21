@@ -19,7 +19,7 @@ unset name
 [[ -e /etc/adm-lite/gerar.sh ]] && rm -f /etc/adm-lite/gerar.sh
 mkdir /bin/ejecutar
 [[ -e /bin/ejecutar/menu_credito ]] && echo "" || echo "$(cat /etc/adm-lite/menu_credito|head -1)" > /bin/ejecutar/menu_credito && chmod +x /bin/ejecutar/menu_credito
-wget -q -O /bin/toolmaster https://raw.githubusercontent.com/kelokepe/scriptcgh/main/Complementos/toolmaster 
+wget -q -O /bin/toolmaster https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Complementos/toolmaster 
 chmod +x /bin/toolmaster
 echo 'source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/Complementos/free-men.sh)' > /bin/ejecutar/echo-ram.sh
 echo 'wget -q -O /bin/ejecutar/v-new.log https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/version/v-new.log' >> /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh
