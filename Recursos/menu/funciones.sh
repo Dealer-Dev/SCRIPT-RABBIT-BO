@@ -510,9 +510,9 @@ echo -ne "\033[1;31m ╰══════╣ OPCION :" && read -p "" opt
 
 
 
-msg -bar
+msg -bar3
 _ports 
-msg -bar
+msg -bar3
 fun_ports
 read -p "D"
  #echo "MPORTAS1 ORIGINAL"
