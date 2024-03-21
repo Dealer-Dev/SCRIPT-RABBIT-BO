@@ -499,7 +499,7 @@ echo -e "\033[0;35m [\033[0;36m4\033[0;35m]\033[0;31m ➮\033[0;33m [!]\033[0;31
 echo -e "\033[0;35m [\033[0;36m6\033[0;35m]\033[0;31m ➮${cor[3]} Cont/Limit DE USUARIOS $VERIFICAR_PID              \033[1;31m ║"
 echo -e "\033[0;35m [\033[0;36m7\033[0;35m]\033[0;31m ➮ \e[3;32mHERRAMIENTAS BETA\e[0m \033[0;33m (#EXPERIMENTAL)    "
 echo -e "\033[0;35m [\033[0;36m8\033[0;35m]\033[0;31m ➮${cor[3]} AUTOINICIAR SCRIPT $_autorun             "
-echo -e "\033[0;35m [\033[0;36m9\033[0;35m]\033[0;31m ➮${cor[3]} INSTALADOR DE PROTOCOLOS              "
+echo -e "\033[0;35m [\033[0;36m9\033[0;35m]\033[0;31m ➮${cor[3]} INSTALAR PROTOCOLOS              "
 msg -bar2
 echo -e "\033[0;35m [\033[0;36m10\033[0;35m]\033[0;31m ➮\033[0;33m [!] \033[1;32mACTUALIZAR${cor[3]} |\033[0;35m [\033[0;36m0\033[0;35m]\033[0;31m ➮ $(msg -bra "\033[1;41m[ Salir ]\e[0m")"
 echo -ne "\033[1;31m ╰══════╣ OPCION :" && read -p "" opt
