@@ -7,10 +7,10 @@ function chekKEY {
 [[ -z ${IP} ]] && IP=$(cat < /bin/ejecutar/IPcgh)
 [[ -z ${IP} ]] && IP=$(wget -qO- ifconfig.me)
 Key="$(cat /etc/cghkey)"
-_double=$(curl -sSL "https://raw.githubusercontent.com/emirjorge/Script-Z/master/CHUMO/Control/Control-Bot.txt")
+_double=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/Control/Control-Bot.txt")
 IiP="$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')"
 [[ -e /file ]] && _double=$(cat < /file) ||  {
-wget -q -O /file https://raw.githubusercontent.com/emirjorge/Script-Z/master/CHUMO/Control/Control-Bot.txt
+wget -q -O /file https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/Control/Control-Bot.txt
 _double=$(cat < /file)
 }
 _check2="$(echo -e "$_double" | grep ${IiP})"
@@ -65,7 +65,7 @@ msg -bar
 	echo -ne "	    DESCARGANDO BINARIO UDP .."
   [[ $(uname -m 2> /dev/null) != x86_64 ]] && {
   chekKEY &> /dev/null 2>&1
-  if wget -O /bin/badvpn-udpgw https://github.com/emirjorge/Script-Z/raw/master/CHUMO/Recursos/ferramentas/badvpn-udpgw-arm &>/dev/null ; then
+  if wget -O /bin/badvpn-udpgw https://github.com/Dealer-Dev/SCRIPT-RABBIT-BO/Recursos/ferramentas/badvpn-udpgw-arm &>/dev/null ; then
   chmod 777 /bin/badvpn-udpgw
   msg -verd "[OK]"  
   else    
@@ -78,7 +78,7 @@ msg -bar
   fi
   } || {   
   chekKEY &> /dev/null 2>&1
-  if wget -O /bin/badvpn-udpgw https://github.com/emirjorge/Script-Z/raw/master/CHUMO/Recursos/ferramentas/badvpn-udpgw-plus &>/dev/null ; then
+  if wget -O /bin/badvpn-udpgw https://github.com/Dealer-Dev/SCRIPT-RABBIT-BO/Recursos/ferramentas/badvpn-udpgw-plus &>/dev/null ; then
   chmod 777 /bin/badvpn-udpgw
   msg -verd "[OK]"    
   else    
