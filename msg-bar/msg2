@@ -28,10 +28,10 @@ NEGRITO='\e[1m'
 SEMCOR='\e[0m'
  case $1 in
   -ne) ccor="${COLOR[2]}${NEGRITO}" && echo -ne "${ccor}${2}${SEMCOR}";;
-  -ama) ccor="${COLOR[3]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
-  -verm) ccor="${COLOR[3]}${NEGRITO}[!] ${COLOR[1]}" && echo -e "${ccor}${2}${SEMCOR}";;
-  -verm2) ccor="${COLOR[1]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
-  -azu) ccor="${COLOR[6]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
+  -ama) ccor="${COLOR[2]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
+  -verm) ccor="${COLOR[2]}${NEGRITO}[!] ${COLOR[1]}" && echo -e "${ccor}${2}${SEMCOR}";;
+  -verm2) ccor="${COLOR[2]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
+  -azu) ccor="${COLOR[2]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
   -verd) ccor="${COLOR[2]}${NEGRITO}" && echo -e "${ccor}${2}${SEMCOR}";;
   -bra) ccor="${COLOR[2]}${SEMCOR}" && echo -e "${ccor}${2}${SEMCOR}";;
   "-bar2"|"-bar") ccor="${COLOR[2]}•••••••••••••••••••••••••••••••••••••••••••••••••" && echo -e "${SEMCOR}${ccor}${SEMCOR}";;
