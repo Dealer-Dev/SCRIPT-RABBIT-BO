@@ -2674,7 +2674,7 @@ v2ray-socket() {
 msg -bar3
 echo -e "INSTALADOR DE v2ray Y PANEL WEB (XRAY)"
 msg -bar3
-echo -e " \033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m${flech}\033[0;33m  Original (Todo en Consola)   \033[0;32m(#OFICIAL)" 
+echo -e " \033[0;35m[\033[0;36m1\033[0;35m] \033[0;34m${flech}\033[0;33m  Original (Consola)   \033[0;32m(#OFICIAL)" 
 echo -e " \033[0;35m[\033[0;36m2\033[0;35m] \033[0;34m${flech}\033[0;33m  MENU Ngix (descontinuado)    \033[0;32m(#OFICIAL)   " #\033[0;33m(#EXPERIMENTAL)"
 echo -e " \033[0;35m[\033[0;36m3\033[0;35m] \033[0;34m${flech}\033[0;33m  MENU Dealer MOD 🐰      \033[0;32m(#OFICIAL)"
 echo -e " \033[0;35m[\033[0;36m4\033[0;35m] \033[0;34m${flech}\033[0;33m  Pannel WEB ( X-RAY ) by: Dealer Dev \033[0;32m(#OFICIAL)"
@@ -3093,7 +3093,7 @@ msg -bar3
 echo -e "\033[0;35m [\033[0;36m1\033[0;35m]\033[0;33m${flech} ${cor[3]}SQUID         $squid \033[0;35m [\033[0;36m11\033[0;35m]\033[0;33m${flech} ${cor[3]}PSIPHON  $pps"
 echo -e "\033[0;35m [\033[0;36m2\033[0;35m]\033[0;33m${flech} ${cor[3]}DROPBEAR      $dropb \033[0;35m [\033[0;36m12\033[0;35m]\033[0;33m${flech} ${cor[3]}TCP DNS        \033[0;33m(#BETA)"
 echo -e "\033[0;35m [\033[0;36m3\033[0;35m]\033[0;33m${flech} ${cor[3]}OPENVPN       $openvpn \033[0;35m [\033[0;36m13\033[0;35m]\033[0;33m${flech} ${cor[3]}WEBMIN         $webminn"
-echo -e "\033[0;35m [\033[0;36m4\033[0;35m]\033[0;33m${flech} ${cor[3]}SSL       $stunel \033[0;35m [\033[0;36m14\033[0;35m]\033[0;33m${flech} ${cor[3]}SlowDNS        $P1"
+echo -e "\033[0;35m [\033[0;36m4\033[0;35m]\033[0;33m${flech} ${cor[3]}SSL/STUNNEL      $stunel \033[0;35m [\033[0;36m14\033[0;35m]\033[0;33m${flech} ${cor[3]}SlowDNS        $P1"
 echo -e "\033[0;35m [\033[0;36m5\033[0;35m]\033[0;33m${flech} ${cor[3]}SHADOWSOCKS-R $shadow \033[0;35m [\033[0;36m15\033[0;35m]\033[0;33m${flech} ${cor[3]}Payload+SSL   ${socksA}" #\033[0;33m(#BETA)"
 echo -e "\033[0;35m [\033[0;36m6\033[0;35m]\033[0;33m${flech} ${cor[3]}SHADOWSOCKS   $user_t \033[0;35m [\033[0;36m16\033[0;35m]\033[0;33m${flech} ${cor[3]}SSLH Multiplex $sslh"
 echo -e "\033[0;35m [\033[0;36m7\033[0;35m]\033[0;33m${flech} ${cor[3]}SOCKS PYTHON  $socks \033[0;35m [\033[0;36m17\033[0;35m]\033[0;33m${flech} ${cor[3]}OVER WEBSOCKET \033[0;33m(#BETA)"
@@ -3108,7 +3108,7 @@ echo -e "\033[0;35m [\033[0;36m23\033[0;35m]\033[0;33m ${flech} ${cor[3]}TCP (BB
 echo -e "\033[0;35m [\033[0;36m25\033[0;35m]\033[0;33m ${flech} ${cor[3]}ARCHIVO ONLINE \033[0;31m[\033[0;32m${portFTP}\033[0;31m]  \033[0;35m [\033[0;36m26\033[0;35m]\033[0;33m ${flech} ${cor[3]}UP|DOWN SpeedTest " #\033[0;35m [\033[0;36m0\033[0;35m]\033[0;33m ? $(msg -bra "\e[3;33m[ SALIR ]\e[0m")"
 echo -e "\033[0;35m [\033[0;36m27\033[0;35m]\033[0;33m ${flech} ${cor[3]}DETALLES DEL VPS     \033[0;35m [\033[0;36m28\033[0;35m]\033[0;33m ${flech} ${cor[3]}Block ADS $_ADS" #\033[0;35m [\033[0;36m0\033[0;35m]\033[0;33m ? $(msg -bra "\e[3;33m[ SALIR ]\e[0m")"
 echo -e "\033[0;35m [\033[0;36m29\033[0;35m]\033[0;33m ${flech} ${cor[3]}DNS CUSTOM  \033[0;35m [\033[0;36m30\033[0;35m]\033[0;33m ${flech} ${cor[3]}FIREWALLD CUSTOM" #\033[0;35m [\033[0;36m0\033[0;35m]\033[0;33m ? $(msg -bra "\e[3;33m[ SALIR ]\e[0m")"
-echo -e "\033[0;35m [\033[0;36m31\033[0;35m]\033[0;33m ${flech} ${cor[3]}Fix PassWD VULTR ${_fv} \033[0;35m [\033[0;36m0\033[0;35m]\033[0;33m ${flech} $(msg -bra "\033[1;41m[ REGRESAR ]\e[0m")"
+echo -e "\033[0;35m [\033[0;36m31\033[0;35m]\033[0;33m ${flech} ${cor[3]}Fix PassWD ISP ${_fv} \033[0;35m [\033[0;36m0\033[0;35m]\033[0;33m ${flech} $(msg -bra "\033[1;41m[ REGRESAR ]\e[0m")"
 msg -bar
 selection=$(selection_fun 20)
 case ${selection} in
