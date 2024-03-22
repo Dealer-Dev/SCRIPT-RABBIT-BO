@@ -14,8 +14,8 @@ PASS = ''
 BUFLEN = 4096 * 4
 TIMEOUT = 60
 DEFAULT_HOST = '127.0.0.1:22'
-#MSG = '<span style=color: #ff0000;><strong><span style=color: #ff9900;>By</span>-<span style=color: #008000;>@ChumoGH</span>-ADM</strong></span>'
-MSG = '<span style=color: #ff0000;><strong><span style="color: #ff0000;">C</span><span style="color: #ff9900;">h</span><span style="color: #008000;">u</span><span style="color: #0000ff;">m</span><span style="color: #ff0000;">o</span><span style="color: #ff9900;">G</span><span style="color: #008000;">H</span><span style="color: #0000ff;">°</span><span style="color: #ff0000;">P</span><span style="color: #ff9900;">l</span><span style="color: #008000;">u</span><span style="color: #0000ff;">s</span></strong></span>'
+#MSG = '<span style=color: #ff0000;><strong><span style=color: #ff9900;>By</span>-<span style=color: #008000;>@DealerServices235</span>-ADM</strong></span>'
+MSG = '<span style=color: #ff0000;><strong><span style="color: #ff0000;">D</span><span style="color: #ff9900;">e</span><span style="color: #008000;">a</span><span style="color: #0000ff;">l</span><span style="color: #ff0000;">e</span><span style="color: #ff9900;">r</span><span style="color: #008000;">A</span><span style="color: #0000ff;">D</span><span style="color: #ff0000;">M</span><span style="color: #ff9900;">-</span><span style="color: #008000;">B</span><span style="color: #0000ff;">O</span></strong></span>'
 
 STATUS_RESP = '101'
 FTAG = '\r\nContent-length: 0\r\n\r\nHTTP/1.1  Connection established\r\n\r\n'
