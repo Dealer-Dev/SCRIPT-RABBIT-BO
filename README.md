@@ -11,3 +11,6 @@ wget -q https://raw.githubusercontent.com/Dealer-Dev/SCRIPT-RABBIT-BO/main/setup
 ```
 
 by @DealerServices235
+
+
+term
