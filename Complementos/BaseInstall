@@ -338,7 +338,7 @@ echo -e ""
 msg -bar3
 echo -e "  ${cor[5]}        🐇🐰 SCRIPT RABBIT-BO 2024 🐰🐇" 
 msg -bar3
-echo -e "${cor[3]}     VERIFICANDO RAIZ DE DATOS DE LA LLAVE !!! "
+echo -e "${cor[3]}     VERIFICANDO RAIZ DE DATOS DE KEY !!! "
 msg -bar3
 [[ -e ${SCPdir}/menu_credito ]] && ress="$(cat ${SCPdir}/menu_credito|head -1) " || ress="NULL ( no found ) "
 echo -ne "${cor[2]}\n\033[1;37m  RESELLER  : " | pv -qL 50 && sleep 1s && echo -e "\033[0;35m$ress" | pv -qL 50
